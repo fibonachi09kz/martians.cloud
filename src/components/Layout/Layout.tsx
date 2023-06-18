@@ -12,7 +12,7 @@ const Layout = ({ children }: PropsType) => {
 	const pathName = usePathname();
 
 	return (
-		<div className="isolate bg-background flex-1 flex flex-col pt-[81px]">
+		<div className="isolate bg-white flex-1 flex flex-col pt-[81px]">
 			<Header />
 
 			<Footer />

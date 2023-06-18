@@ -36,7 +36,7 @@ const Header = () => {
 						{navigation.map((item: NavigationItem) => {
 							const isActive = pathname === item.href
 							return (
-								<Link key={item.name} href={item.href} className={`text-base px-4 py-2 border border-transparent transition-all leading-6 rounded-lg hover:border-gray-400 ${isActive ? 'text-mainBlue font-medium' : 'text-gray-900'}`}>
+								<Link key={item.name} href={item.href} className={`text-base px-4 py-2 bg-transparent hover:bg-blue-50 transition-all leading-6 rounded-lg ${isActive ? 'text-mainBlue font-medium' : 'text-gray-900'}`}>
 									{item.name}
 								</Link>
 							)

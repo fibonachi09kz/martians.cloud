@@ -3,7 +3,7 @@ import Logo from "@/components/Logo/Logo";
 const Footer = () => {
 	return (
 		<footer className="py-8 mt-auto">
-			<div className="max-w-7xl mx-auto p-10 bg-white rounded-xl">
+			<div className="max-w-7xl mx-auto p-10 bg-gray-100 rounded-xl">
 				<Logo withTitle={true} />
 				<nav className="grid grid-cols-3 mt-8">
 					<div>
