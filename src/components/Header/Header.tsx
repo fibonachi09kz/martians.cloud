@@ -20,7 +20,7 @@ const Header = () => {
 				<nav className="flex items-center justify-between py-4" aria-label="Global">
 					<div className="flex lg:flex-1 items-center gap-3 mr-3">
 						<Logo withTitle={false} />
-						<p className="text-sm text-gray-600 leading-5">Web-студия разработки сайтов в Казахстане</p>
+						<p className="text-sm text-gray-600 leading-4.5">Web-студия разработки сайтов в Казахстане</p>
 					</div>
 					<div className="flex lg:hidden">
 						<button
