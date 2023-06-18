@@ -2,6 +2,7 @@
 import React from "react";
 import {usePathname} from "next/navigation";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 
 type PropsType = {
@@ -11,8 +12,10 @@ const Layout = ({ children }: PropsType) => {
 	const pathName = usePathname();
 
 	return (
-		<div className="isolate bg-background flex-1 flex flex-col">
+		<div className="isolate bg-background flex-1 flex flex-col pt-[81px]">
 			<Header />
+
+			<Footer />
 		</div>
 	)
 }

@@ -2,30 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
-}
-
-body {
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-	)
-	rgb(var(--background-start-rgb));
-}
-
 
 @keyframes leftEye {
 	0% {
@@ -55,11 +31,25 @@ body {
 		transform: scale(0.7, 0) rotate(-10deg);
 	}
 }
-#leftEye {
+.leftEye {
 	transform-origin: center;
 	animation: leftEye 2s infinite;
 }
-#rightEye {
+.rightEye {
 	transform-origin: center;
 	animation: rightEye 2s infinite;
+}
+
+
+.button {
+	@apply bg-transparent px-5 py-3 rounded-xl text-gray-900 transition-all font-medium text-center flex items-center gap-2 text-base
+}
+.button-blue {
+	@apply bg-mainBlue hover:bg-mainBlueDarker text-white
+}
+.button-white {
+	@apply bg-white hover:bg-background text-mainBlue
+}
+a {
+	@apply hover:text-mainBlue
 }

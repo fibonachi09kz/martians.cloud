@@ -2,9 +2,9 @@ import { NavigationType } from "@/types/NavigationTypes";
 
 
 export const navigation: NavigationType = [
-	{ name: 'Home', href: '/' },
-	{ name: 'Projects', href: '/projects' },
-	{ name: 'Technologies', href: '/techs' },
-	{ name: 'About', href: '/about' },
-	{ name: 'Contacts', href: '/contacts' }
+	{ name: 'Главная', href: '/' },
+	{ name: 'Проекты', href: '/projects' },
+	{ name: 'Технологии', href: '/technologies' },
+	{ name: 'О нас', href: '/about' },
+	{ name: 'Контакты', href: '/contacts' }
 ]
