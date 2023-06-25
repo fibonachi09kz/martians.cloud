@@ -60,7 +60,7 @@ const Footer = () => {
 				</nav>
 			</div>
 			<div className="flex items-center justify-between mx-auto max-w-7xl pt-8">
-				<p>© ИП "Martians", {new Date().getFullYear()}. Все права защищены.</p>
+				<p>ИП Martians, БИН 001014551125, {new Date().getFullYear()}. © Все права защищены.</p>
 				<a href="">Политика конфиденциальности</a>
 			</div>
 		</footer>

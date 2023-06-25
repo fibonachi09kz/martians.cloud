@@ -14,7 +14,9 @@ const Layout = ({ children }: PropsType) => {
 	return (
 		<div className="isolate bg-white flex-1 flex flex-col pt-[81px]">
 			<Header />
-
+				<main>
+					{children}
+				</main>
 			<Footer />
 		</div>
 	)
