@@ -1,13 +1,14 @@
 import Link from "next/link";
 
 type PropsType = {
-	withTitle: boolean
+	withTitle: boolean,
+	isDark: boolean
 }
 
-const Logo = ({ withTitle }: PropsType) => {
+const Logo = ({ withTitle, isDark }: PropsType) => {
 	return (
 		<Link href="/" className="flex items-center gap-2 hover:text-gray-900 w-fit">
-			<span className="sr-only">Fibonachi</span>
+			<span className="sr-only">Martians.kz</span>
 			<svg className="h-12 w-12" xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 0 2000 2000" fill="none">
 				<mask id="mask0_1_2" maskUnits="userSpaceOnUse" x="257" y="129" width="1486" height="1742">
 					<path d="M257.37 129.714H1742.49V1870.68H257.37V129.714Z" fill="white"/>
@@ -19,7 +20,7 @@ const Logo = ({ withTitle }: PropsType) => {
 				<path className="rightEye" d="M1464.82 787.538L1424.69 784.819C1332.43 778.517 1243.48 808.747 1174.08 869.76C1104.67 930.767 1063.33 1015.18 1057.66 1107.43L1056.08 1133.07C1054.59 1157.47 1073.21 1178.65 1097.59 1180.29L1160.61 1184.58C1168.03 1185.07 1175.42 1185.33 1182.79 1185.33C1260.89 1185.33 1335.41 1157.32 1394.63 1105.25C1459.47 1048.28 1498.08 969.444 1503.36 883.304L1506.34 834.761C1507.84 810.363 1489.21 789.183 1464.82 787.538Z" fill="#0077FF"/>
 			</svg>
 			{withTitle && (
-				<p className="text-3xl font-bold"><span className="text-mainBlue">M</span>artians</p>
+				<p className={`text-3xl font-bold ${isDark ? "text-gray-900" : "text-white"}`}><span className="text-mainBlue">M</span>artians</p>
 			)}
 		</Link>
 	)
