@@ -14,7 +14,7 @@ const Layout = ({ children }: PropsType) => {
 	return (
 		<div className="isolate bg-gray-900 flex-1 flex flex-col pt-[81px] overflow-x-hidden">
 			<Header />
-				<main className="flex-1">
+				<main className="flex-1 flex flex-col">
 					{children}
 				</main>
 			<Footer />

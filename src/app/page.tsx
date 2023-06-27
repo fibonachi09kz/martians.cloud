@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import Layout from "@/components/Layout/Layout";
 import HPPromo from "@/components/HomePage/HPPromo/HPPromo";
 import HPTariffs from "@/components/HomePage/HPTariffs/HPTariffs";
 
-function Home() {
+function HomePage() {
 	return (
 		<Layout>
 			<HPPromo />
@@ -12,4 +11,4 @@ function Home() {
 	)
 }
 
-export default Home;
+export default HomePage;

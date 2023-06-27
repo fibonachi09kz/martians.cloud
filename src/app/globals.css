@@ -47,6 +47,9 @@
 .button-blue {
 	@apply bg-mainBlue hover:bg-mainBlueDarker text-white hover:text-white
 }
+.button-gray {
+	@apply bg-gray-600 hover:bg-gray-700 text-white hover:text-white
+}
 .button-white {
 	@apply bg-white hover:bg-background text-mainBlue hover:text-mainBlue
 }
