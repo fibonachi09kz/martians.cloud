@@ -1,4 +1,5 @@
 import {CheckCircleIcon} from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const includedFeatures = [
 	'Индивидуальный дизайн',
@@ -68,9 +69,9 @@ const HPTariffs = () => {
 									<span>от 150 000 ₸</span>
 								</div>
 								<p className="mt-4 text-sm">
-									<a href="#" className="font-medium text-gray-500 underline">
+									<Link href="/steps/landing" className="font-medium text-gray-500 underline">
 										Подробнее о процессе разработки
-									</a>
+									</Link>
 								</p>
 								<div className="mt-6">
 									<div className="rounded-md shadow">
