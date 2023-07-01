@@ -125,9 +125,9 @@ const HPTariffs = () => {
 									<span>от 250 000 ₸</span>
 								</div>
 								<p className="mt-4 text-sm">
-									<a href="#" className="font-medium text-gray-500 underline">
+									<Link href="/steps/multi" className="font-medium text-gray-500 underline">
 										Подробнее о процессе разработки
-									</a>
+									</Link>
 								</p>
 								<div className="mt-6">
 									<div className="rounded-md shadow">
@@ -181,9 +181,9 @@ const HPTariffs = () => {
 									<span>от 500 000 ₸</span>
 								</div>
 								<p className="mt-4 text-sm">
-									<a href="#" className="font-medium text-gray-500 underline">
+									<Link href="/steps/shop" className="font-medium text-gray-500 underline">
 										Подробнее о процессе разработки
-									</a>
+									</Link>
 								</p>
 								<div className="mt-6">
 									<div className="rounded-md shadow">
