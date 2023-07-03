@@ -101,6 +101,11 @@ const Footer = () => {
 				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
 					<div className="space-y-6 xl:col-span-1">
 						<Logo withTitle={true} isDark={true} />
+						<div className="text-sm font-medium text-green-500 flex items-center gap-2">
+							<span className="text-gray-500">Статус:</span>
+							<span className="w-2 h-2 flex-shrink-0 rounded-full bg-green-500"></span>
+							<span>Все системы online</span>
+						</div>
 						<p className="text-base text-gray-500">
 							Профессиональная разработка многоцелевых сайтов в Казахстане
 						</p>
