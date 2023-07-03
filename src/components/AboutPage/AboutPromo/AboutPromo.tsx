@@ -1,13 +1,11 @@
+import bg from './img/bg.png';
+import Image from 'next/image';
 const AboutPromo = () => {
 	return (
 		<div className="bg-white">
 			<div className="relative bg-sky-800 py-24 sm:py-32">
 				<div className="absolute inset-0">
-					<img
-						className="h-full w-full object-cover"
-						src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=100"
-						alt=""
-					/>
+					<Image src={bg} alt="About us" style={{objectFit: "cover", width: "100%", height: "100%"}} />
 					<div
 						className="absolute inset-0 backdrop-blur-sm bg-gray-900/70"
 						aria-hidden="true"
