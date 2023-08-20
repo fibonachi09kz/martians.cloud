@@ -10,8 +10,8 @@ const montserrat = Montserrat({
 
 
 export const metadata = {
-	title: 'Martians | Web-студия разработки сайтов в Казахстане',
-	description: 'Web-студия разработки сайтов в Казахстане',
+	title: 'Martians | Web-студия разработки сайтов',
+	description: 'Web-студия разработки сайтов',
 }
 
 export default function RootLayout({ children }: {children: React.ReactNode }) {

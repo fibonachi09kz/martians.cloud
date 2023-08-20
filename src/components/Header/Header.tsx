@@ -15,12 +15,12 @@ const Header = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
 	return (
-		<header className="w-full fixed bg-gray-900/80 top-0 left-0 backdrop-blur z-50 border-b border-gray-800 shadow-xl">
+		<header className="w-full fixed bg-black/80 top-0 left-0 backdrop-blur z-50 border-b border-gray-800 shadow-xl">
 			<div className="w-full max-w-7xl mx-auto px-5">
 				<nav className="flex items-center justify-between py-4" aria-label="Global">
 					<div className="flex xl:flex-1 items-center gap-3 mr-3">
 						<Logo withTitle={false} isDark={false} />
-						<p className="text-sm text-gray-300 leading-4.5">Web-студия разработки сайтов в Казахстане</p>
+						{/*<p className="text-sm text-gray-300 leading-4.5">Development Studio</p>*/}
 					</div>
 					<div className="flex xl:hidden">
 						<button

@@ -42,7 +42,7 @@
 
 
 .button {
-	@apply bg-transparent px-5 py-3 rounded-xl text-gray-900 transition-all font-medium text-center flex items-center gap-2 text-base
+	@apply bg-transparent px-5 py-3 rounded-xl text-gray-900 transition-all font-medium text-center flex items-center justify-center gap-2 text-base
 }
 .button-blue {
 	@apply bg-mainBlue hover:bg-mainBlueDarker text-white hover:text-white
