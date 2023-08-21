@@ -3,7 +3,7 @@ import HPGlobe from "@/components/HomePage/HPPromo/HPGlobe";
 
 const HPPromo = () => {
 	return (
-		<div className="bg-black pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
+		<div className="bg-white dark:bg-black pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
 			<div className="mx-auto max-w-7xl lg:px-8">
 				<div className="lg:grid lg:grid-cols-2 lg:gap-8">
 					<div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">

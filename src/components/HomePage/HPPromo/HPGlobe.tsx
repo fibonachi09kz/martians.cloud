@@ -1,7 +1,8 @@
 'use client'
 import createGlobe from "cobe";
-import {useEffect, useRef, useState} from "react";
+import {useContext, useEffect, useRef, useState} from "react";
 import { useSpring } from 'react-spring';
+import ThemeContext from "@/contexts/theme";
 
 const HPGlobe = () => {
 
@@ -10,6 +11,9 @@ const HPGlobe = () => {
 	const pointerInteractionMovement = useRef<number>(0);
 	const [isInViewport, setIsInViewport] = useState(false);
 	const globeRef = useRef<any>(null);
+
+	const { theme, toggleThemeHandler } = useContext(ThemeContext);
+
 	const [{ r }, api] = useSpring<{ r: number }>(() => ({
 		r: 0,
 		config: {
@@ -41,18 +45,18 @@ const HPGlobe = () => {
 		onResize();
 		onScroll();
 
-
+		let a = theme === 'dark';
 		globeRef.current = createGlobe(canvasRef.current!, {
 			phi: 0,
 			theta: 0,
 			mapSamples: 16000,
-			mapBrightness: 6,
+			mapBrightness: a ? 20 : 4,
 			mapBaseBrightness: 0,
 			diffuse: 1.1,
-			dark: 1,
-			baseColor: [0.2, 0.2, 0.2],
+			dark: a ? 1 : 0,
+			baseColor: a ? [.1, .1, .1] : [1, 1, 1],
 			markerColor: [0, 0.4, 1],
-			glowColor: [0.09, 0.1, 0.1],
+			glowColor: a ? [0.09, 0.1, 0.1] : [0.85, 0.85, 0.85],
 			devicePixelRatio: 1,
 			width: 600,
 			height: 600,
@@ -65,6 +69,7 @@ const HPGlobe = () => {
 				if (!pointerInteracting.current) {
 					phi += 0.002
 				}
+
 				state.phi = phi + r.get();
 				state.width = width;
 				state.height = width;
@@ -82,16 +87,14 @@ const HPGlobe = () => {
 				globeRef.current.destroy();
 			}
 		};
-	}, [r, isInViewport]);
+	}, [r, isInViewport, theme]);
 
 	useEffect(() => {
 		// Call the toggle method of the globe instance when component becomes visible
 		if (isInViewport && globeRef.current) {
 			globeRef.current.toggle(true);
-			console.log('playu')
 		} else {
 			globeRef.current.toggle(false);
-			console.log('pause')
 		}
 	}, [isInViewport]);
 
@@ -129,7 +132,7 @@ const HPGlobe = () => {
 					});
 				}
 			}}
-			style={{ width: 600, height: 600, maxWidth: "100%", aspectRatio: 1 }}
+			style={{ width: 600, maxWidth: "100%", aspectRatio: 1 }}
 		/>
 	)
 }
