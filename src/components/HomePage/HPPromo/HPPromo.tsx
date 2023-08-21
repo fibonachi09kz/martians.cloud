@@ -10,19 +10,19 @@ const HPPromo = () => {
 						<div className="lg:py-24">
 							<a
 								href="#"
-								className="inline-flex items-center rounded-full bg-black p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
+								className="inline-flex items-center border border-gray-300 dark:border-gray-800 rounded-full p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
 							>
 								<span className="rounded-full bg-mainBlue px-3 py-0.5 text-sm font-semibold leading-5 text-white">
 								  Martians.kz
 								</span>
-								<span className="ml-4 text-sm">Подробнее о компании</span>
+								<span className="ml-4 text-sm text-black dark:text-white">Подробнее о компании</span>
 								<ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
 							</a>
-							<h1 className="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+							<h1 className="mt-4 text-4xl font-bold tracking-tight text-black dark:text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
 								<span className="block">Разработка сайтов</span>
 								<span className="block text-mainBlue">по всему миру</span>
 							</h1>
-							<p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+							<p className="mt-3 text-base text-gray-600 dark:text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
 								Наша компания специализируется на создании современных, быстрых, а главное - индивидуальных сайтов
 							</p>
 							<div className="mt-10 sm:mt-12">
@@ -36,7 +36,7 @@ const HPPromo = () => {
 												id="email"
 												type="email"
 												placeholder="Ваша почта"
-												className="block w-full rounded-md border-0 px-4 py-3 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-mainBlueDarker focus:ring-offset-2 focus:ring-offset-gray-900"
+												className="block w-full bg-transparent border border-gray-300 dark:border-gray-800 rounded-md px-4 py-3 text-base text-gray-900 dark:text-white dark:placeholder-gray-400 focus:ring-0 focus:ring-transparent focus:outline-none focus:outline-0 dark:focus:border-mainBlue"
 											/>
 										</div>
 										<div className="mt-3 sm:mt-0 sm:ml-3">
@@ -48,8 +48,8 @@ const HPPromo = () => {
 											</button>
 										</div>
 									</div>
-									<p className="mt-3 text-sm text-gray-300 sm:mt-4">
-										Оставьте свою почту, и мы отправим вам <a href="#" className="font-medium text-white">бриф</a> для заполнения, чтобы создать общее представление о вашем проекте
+									<p className="mt-3 text-sm text-gray-600 dark:text-gray-300 sm:mt-4">
+										Оставьте свою почту, и мы отправим вам <a href="#" className="font-medium text-mainBlue">бриф</a> для заполнения, чтобы создать общее представление о вашем проекте
 									</p>
 								</form>
 							</div>

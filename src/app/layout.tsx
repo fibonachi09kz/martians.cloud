@@ -2,7 +2,7 @@ import './globals.css'
 import React from "react";
 import { Montserrat, Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
-import {ThemeContextProvider} from "@/contexts/theme";
+import { ThemeProviderWrapper } from "@/providers/theme";
 
 const inter = Inter({
 	subsets: ['cyrillic'],
@@ -17,11 +17,13 @@ export const metadata = {
 
 export default function RootLayout({ children }: {children: React.ReactNode }) {
 	return (
-		<ThemeContextProvider>
-			<html lang="en">
-				<body className={`${inter.className} min-h-screen flex flex-col`}>{children}</body>
-				<Analytics />
-			</html>
-		</ThemeContextProvider>
+		<html lang="en" suppressHydrationWarning>
+			<body className={`${inter.className} min-h-screen flex flex-col`}>
+				<ThemeProviderWrapper>
+					{children}
+				</ThemeProviderWrapper>
+			</body>
+			<Analytics />
+		</html>
 	)
 }

@@ -2,8 +2,7 @@
 import createGlobe from "cobe";
 import {useContext, useEffect, useRef, useState} from "react";
 import { useSpring } from 'react-spring';
-import ThemeContext from "@/contexts/theme";
-
+import { useTheme } from 'next-themes'
 const HPGlobe = () => {
 
 	const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -11,8 +10,7 @@ const HPGlobe = () => {
 	const pointerInteractionMovement = useRef<number>(0);
 	const [isInViewport, setIsInViewport] = useState(false);
 	const globeRef = useRef<any>(null);
-
-	const { theme, toggleThemeHandler } = useContext(ThemeContext);
+	const { resolvedTheme } = useTheme()
 
 	const [{ r }, api] = useSpring<{ r: number }>(() => ({
 		r: 0,
@@ -45,7 +43,7 @@ const HPGlobe = () => {
 		onResize();
 		onScroll();
 
-		let a = theme === 'dark';
+		let a = resolvedTheme === 'dark';
 		globeRef.current = createGlobe(canvasRef.current!, {
 			phi: 0,
 			theta: 0,
@@ -87,7 +85,7 @@ const HPGlobe = () => {
 				globeRef.current.destroy();
 			}
 		};
-	}, [r, isInViewport, theme]);
+	}, [r, isInViewport, resolvedTheme]);
 
 	useEffect(() => {
 		// Call the toggle method of the globe instance when component becomes visible

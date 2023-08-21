@@ -100,7 +100,7 @@ const Footer = () => {
 			<div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
 				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
 					<div className="space-y-6 xl:col-span-1">
-						<Logo withTitle={true} isDark={true} />
+						<Logo withTitle={true} isDark={false} />
 						<div className="text-sm font-medium text-green-500 flex items-center gap-2">
 							<span className="text-gray-500">Статус:</span>
 							<span className="w-2 h-2 flex-shrink-0 rounded-full bg-green-500"></span>

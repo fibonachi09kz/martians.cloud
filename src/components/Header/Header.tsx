@@ -1,6 +1,7 @@
+'use client'
 import { useState} from 'react';
 import { usePathname } from 'next/navigation';
-import { Bars3Icon, XMarkIcon, LightBulbIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Dialog } from '@headlessui/react';
 import Link from "next/link";
 import { navigation } from "@/data/navigation";
@@ -55,7 +56,7 @@ const Header = () => {
 
 				</nav>
 				<Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-					<Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white dark:bg-gray-900 px-5 py-4 xl:hidden">
+					<Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white dark:bg-black px-5 py-2 xl:hidden">
 						<div className="flex items-center justify-between">
 							<Logo withTitle={true} isDark={false} />
 							<button
@@ -76,7 +77,7 @@ const Header = () => {
 											<Link
 												key={item.name}
 												href={item.href}
-												className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-400/10 ${isActive ? 'text-mainBlue' : 'text-gray-900 dark:text-white'}`}
+												className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-800/60 ${isActive ? 'text-mainBlue' : 'text-gray-900 dark:text-white'}`}
 											>
 												{item.name}
 											</Link>
