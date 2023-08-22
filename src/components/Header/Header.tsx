@@ -17,7 +17,7 @@ const Header = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
 	return (
-		<header className="w-full fixed bg-white/90 dark:bg-black/90 top-0 left-0 backdrop-blur z-50 border-b border-gray-200 dark:border-gray-800">
+		<header className="w-full fixed bg-white/80 dark:bg-black/80 top-0 left-0 backdrop-blur z-50 border-b border-gray-200 dark:border-white/20">
 			<div className="w-full max-w-7xl mx-auto px-5">
 				<nav className="flex items-center justify-between py-2" aria-label="Global">
 					<div className="flex xl:flex-1 items-center gap-3 mr-3">
@@ -38,7 +38,7 @@ const Header = () => {
 						{navigation.map((item: NavigationItem) => {
 							const isActive = pathname === item.href
 							return (
-								<Link key={item.name} href={item.href} className={`text-base px-4 py-1 text-gray-600 dark:text-white hover:text-black font-normal transition-all leading-6 rounded-xl ${isActive ? 'bg-gray-200/60 dark:bg-gray-800/80 text-gray-900' : ''}`}>
+								<Link key={item.name} href={item.href} className={`text-base px-4 py-1 text-gray-600 dark:text-white/80 hover:text-black dark:hover:text-white font-normal transition-all leading-6 rounded-xl ${isActive ? 'bg-gray-200/60 dark:bg-gray-800/80 text-gray-900' : ''}`}>
 									{item.name}
 								</Link>
 							)
@@ -46,7 +46,7 @@ const Header = () => {
 					</div>
 					<div className="hidden xl:flex xl:flex-1 xl:justify-end">
 						<Link href="#" className="button button-blue">
-							<RocketLaunchIcon className="h-5 w-5 text-white transition-all group-hover:text-black" aria-hidden="true"  />
+							<RocketLaunchIcon className="h-5 w-5 text-white transition-all" aria-hidden="true"  />
 							Заказать
 						</Link>
 					</div>

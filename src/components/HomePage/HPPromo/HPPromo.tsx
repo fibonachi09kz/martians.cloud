@@ -36,7 +36,7 @@ const HPPromo = () => {
 												id="email"
 												type="email"
 												placeholder="Ваша почта"
-												className="block w-full bg-transparent border border-gray-300 dark:border-gray-800 rounded-md px-4 py-3 text-base text-gray-900 dark:text-white dark:placeholder-gray-400 focus:ring-0 focus:ring-transparent focus:outline-none focus:outline-0 dark:focus:border-mainBlue"
+												className="block w-full bg-transparent border border-gray-300 dark:border-white/20 rounded-md px-4 py-3 text-base text-gray-900 dark:text-white dark:placeholder-gray-400 focus:ring-0 focus:ring-transparent focus:outline-none focus:outline-0 dark:focus:border-mainBlue"
 											/>
 										</div>
 										<div className="mt-3 sm:mt-0 sm:ml-3">

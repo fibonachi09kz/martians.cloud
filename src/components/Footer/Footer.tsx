@@ -93,7 +93,7 @@ const navigation = {
 }
 const Footer = () => {
 	return (
-		<footer className="bg-white border-t border-gray-200" aria-labelledby="footer-heading">
+		<footer className="bg-white dark:bg-black border-t border-gray-300 dark:border-white/20" aria-labelledby="footer-heading">
 			<h2 id="footer-heading" className="sr-only">
 				Martians.kz
 			</h2>
@@ -102,12 +102,12 @@ const Footer = () => {
 					<div className="space-y-6 xl:col-span-1">
 						<Logo withTitle={true} isDark={false} />
 						<div className="text-sm font-medium text-green-500 flex items-center gap-2">
-							<span className="text-gray-500">Статус:</span>
+							<span className="text-gray-500 dark:text-gray-400">Статус:</span>
 							<span className="w-2 h-2 flex-shrink-0 rounded-full bg-green-500"></span>
 							<span>Все системы online</span>
 						</div>
-						<p className="text-base text-gray-500">
-							Профессиональная разработка многоцелевых сайтов в Казахстане
+						<p className="text-base text-gray-500 dark:text-gray-400 max-w-xs">
+							Профессиональная разработка многоцелевых сайтов
 						</p>
 						<div className="flex space-x-6">
 							{navigation.social.map((item) => (
@@ -117,18 +117,18 @@ const Footer = () => {
 								</a>
 							))}
 						</div>
-						<Link href="/" className="block text-gray-500">
+						<Link href="/" className="block text-gray-500 dark:text-gray-400">
 							Политика конфиденциальности
 						</Link>
 					</div>
 					<div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
 						<div className="md:grid md:grid-cols-2 md:gap-8">
 							<div>
-								<h3 className="text-base font-bold text-gray-900">Главная</h3>
+								<h3 className="text-base font-bold text-black dark:text-white">Главная</h3>
 								<ul role="list" className="mt-4 space-y-4">
 									{navigation.solutions.map((item) => (
 										<li key={item.name}>
-											<a href={item.href} className="text-base text-gray-600">
+											<a href={item.href} className="text-base text-gray-600 dark:text-gray-400">
 												{item.name}
 											</a>
 										</li>
@@ -136,11 +136,11 @@ const Footer = () => {
 								</ul>
 							</div>
 							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-bold text-gray-900">Support</h3>
+								<h3 className="text-base font-bold text-black dark:text-white">Support</h3>
 								<ul role="list" className="mt-4 space-y-4">
 									{navigation.support.map((item) => (
 										<li key={item.name}>
-											<a href={item.href} className="text-base text-gray-600">
+											<a href={item.href} className="text-base text-gray-600 dark:text-gray-400">
 												{item.name}
 											</a>
 										</li>
@@ -150,11 +150,11 @@ const Footer = () => {
 						</div>
 						<div className="md:grid md:grid-cols-2 md:gap-8">
 							<div>
-								<h3 className="text-base font-bold text-gray-900">Company</h3>
+								<h3 className="text-base font-bold text-black dark:text-white">Company</h3>
 								<ul role="list" className="mt-4 space-y-4">
 									{navigation.company.map((item) => (
 										<li key={item.name}>
-											<a href={item.href} className="text-base text-gray-600">
+											<a href={item.href} className="text-base text-gray-600 dark:text-gray-400">
 												{item.name}
 											</a>
 										</li>
@@ -162,11 +162,11 @@ const Footer = () => {
 								</ul>
 							</div>
 							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-bold text-gray-900">Legal</h3>
+								<h3 className="text-base font-bold text-black dark:text-white">Legal</h3>
 								<ul role="list" className="mt-4 space-y-4">
 									{navigation.legal.map((item) => (
 										<li key={item.name}>
-											<a href={item.href} className="text-base text-gray-600">
+											<a href={item.href} className="text-base text-gray-600 dark:text-gray-400">
 												{item.name}
 											</a>
 										</li>
@@ -176,8 +176,8 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="mt-12 border-t border-gray-200 pt-8">
-					<p className="text-base text-gray-600 xl:text-center">&copy; 2023 ИП Martians, БИН 001014551125. Казахстан, г. Караганда. Все права защищены.</p>
+				<div className="mt-12 border-t border-gray-300 dark:border-white/20 pt-8">
+					<p className="text-base text-gray-600 dark:text-gray-400 xl:text-center">&copy; 2023 ИП Martians, ИИН 001014551125. Казахстан, г. Караганда. Все права защищены.</p>
 				</div>
 			</div>
 		</footer>
