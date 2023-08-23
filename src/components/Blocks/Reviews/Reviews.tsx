@@ -28,77 +28,77 @@ const Reviews = () => {
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 					<SwiperSlide
 						className="p-5 rounded-lg border border-gray-300 dark:border-white/20 max-w-xl"
 					>
 						<p className="text-black text-2xl text-center mb-6 dark:text-white">“Last Black Friday and Cyber Monday was the first in NZXT's 20-year history with zero downtime. That literally translates to millions of dollars.”</p>
 						<p className="text-black text-lg text-center mb-4 dark:text-white">Director of Engineering</p>
-						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={50} alt="Logo" />
+						<Image className="mx-auto dark:invert" src="https://assets.vercel.com/image/upload/front/home/new/logos/loom.svg" width={100} height={30} alt="Logo" />
 					</SwiperSlide>
 				</Swiper>
 			</div>

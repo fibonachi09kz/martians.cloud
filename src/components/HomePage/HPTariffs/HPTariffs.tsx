@@ -131,7 +131,7 @@ const HPTariffs = () => {
 										</ul>
 									</div>
 								</div>
-								<div className="py-8 px-6 max-w-sm w-full border-l border-gray-300 dark:border-white/20 text-center lg:flex lg:flex-shrink-0 lg:flex-col lg:justify-center lg:p-12">
+								<div className="py-8 px-6 lg:max-w-sm w-full border-l border-gray-300 dark:border-white/20 text-center lg:flex lg:flex-shrink-0 lg:flex-col lg:justify-center lg:p-12">
 									<div className="mt-4 flex items-center justify-center text-4xl font-bold tracking-tight text-black dark:text-white">
 										<span>{tariff.price}</span>
 									</div>
