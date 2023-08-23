@@ -56,3 +56,6 @@
 a {
 	@apply hover:text-mainBlue dark:hover:text-mainBlue
 }
+.linear-swiper .swiper-wrapper {
+	transition-timing-function: linear;
+}
