@@ -3,7 +3,7 @@ import HPGlobe from "@/components/HomePage/HPPromo/HPGlobe";
 
 const HPPromo = () => {
 	return (
-		<div className="bg-white dark:bg-black pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
+		<div className="bg-white dark:bg-black pt-10 sm:pt-16 overflow-hidden lg:pt-8 lg:pb-14">
 			<div className="mx-auto max-w-7xl lg:px-8">
 				<div className="lg:grid lg:grid-cols-2 lg:gap-8">
 					<div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
@@ -56,7 +56,7 @@ const HPPromo = () => {
 						</div>
 					</div>
 					<div className="mt-12 mb-0 lg:relative lg:m-0">
-						<div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
+						<div className="max-w-full h-[300px] overflow-hidden relative border-b border-gray-300 dark:border-white/20 sm:border-0 sm:h-auto mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
 							{/*<svg className="w-full h-auto lg:w-auto" width="764" height="690" viewBox="0 0 764 690" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
 							{/*	<path opacity="0.07" d="M507.3 105.6C509.4 106.8 511.3 109.7 511.6 112.3L558.3 498.6C558.7 501.9 556.7 503.4 554 501.9L299.9 355.2C297.3 353.7 295.2 349.8 295.6 347L342.4 14.7C342.7 12.4 344.5 11.7 346.7 12.9L507.3 105.6Z" fill="url(#paint0_linear_291_5495)"/>*/}
 							{/*	<path opacity="0.4" d="M441.6 111.1C441.6 70.5 417.8 23.8 388.5 6.80001C359.2 -10.1 335.4 9.10002 335.4 49.7L346.9 56.3V56.2C346.9 24.3 365.6 9.20002 388.6 22.5C411.6 35.8 430.3 72.5 430.3 104.4V104.5L441.6 111.1Z" fill="url(#paint1_linear_291_5495)"/>*/}

@@ -25,6 +25,7 @@ const HPGlobe = () => {
 	let phi = 3.2;
 
 	useEffect(() => {
+		let screenWidth = window.innerWidth;
 		let width = 0;
 		const onResize = () => {
 			if (canvasRef.current && isInViewport) {
@@ -40,8 +41,8 @@ const HPGlobe = () => {
 		};
 		window.addEventListener('resize', onResize);
 		window.addEventListener('scroll', onScroll);
-		onResize();
 		onScroll();
+		onResize();
 
 		let a = resolvedTheme === 'dark';
 		globeRef.current = createGlobe(canvasRef.current!, {
@@ -59,6 +60,7 @@ const HPGlobe = () => {
 			width: 600,
 			height: 600,
 			opacity: 1,
+			scale: 1,
 			markers: [
 				{ location: [55.75655, 37.62316], size: 0.1 },
 				{ location: [49.80780, 73.08878], size: 0.1 }
@@ -69,8 +71,10 @@ const HPGlobe = () => {
 				}
 
 				state.phi = phi + r.get();
-				state.width = width;
-				state.height = width;
+				if (screenWidth > 640) {
+					state.width = width;
+					state.height = width;
+				}
 			}
 		});
 		setTimeout(() => {
@@ -98,6 +102,7 @@ const HPGlobe = () => {
 
 	return (
 		<canvas
+			className="absolute sm:relative left-1/2 -translate-x-1/2 w-[600px] h-[600px] max-w-none sm:max-w-full sm:w-[600px] sm:h-auto aspect-square"
 			ref={canvasRef}
 			onPointerDown={(e) => {
 				pointerInteracting.current =
@@ -130,7 +135,6 @@ const HPGlobe = () => {
 					});
 				}
 			}}
-			style={{ width: 600, maxWidth: "100%", aspectRatio: 1 }}
 		/>
 	)
 }
