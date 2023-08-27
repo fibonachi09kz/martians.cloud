@@ -93,7 +93,7 @@ const navigation = {
 }
 const Footer = () => {
 	return (
-		<footer className="bg-white dark:bg-black border-t border-gray-300 dark:border-white/20" aria-labelledby="footer-heading">
+		<footer className="relative bg-white dark:bg-black border-t border-gray-300 dark:border-white/20" aria-labelledby="footer-heading">
 			<h2 id="footer-heading" className="sr-only">
 				Martians.kz
 			</h2>

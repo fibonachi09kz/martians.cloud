@@ -6,7 +6,7 @@ const LandingStepsPage = () => {
 	return (
 		<Layout>
 			<LandingSteps />
-			<HPCta />
+			<HPCta isLastBlock={true} />
 		</Layout>
 	)
 }

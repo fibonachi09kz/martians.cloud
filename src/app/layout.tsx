@@ -11,7 +11,7 @@ const inter = Inter({
 
 
 export const metadata = {
-	title: 'Martians | Web-студия разработки сайтов',
+	title: 'Главная | Web-студия Martians',
 	description: 'Web-студия разработки сайтов',
 }
 

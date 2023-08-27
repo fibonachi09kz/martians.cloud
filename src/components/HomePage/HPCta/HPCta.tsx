@@ -1,6 +1,10 @@
-const HPCta = () => {
+
+interface Props {
+	isLastBlock?: boolean
+}
+const HPCta = ({ isLastBlock }: Props) => {
 	return (
-		<div className="border-y border-gray-300 dark:border-white/20 bg-white dark:bg-black">
+		<div className={`border-y border-gray-300 dark:border-white/20 bg-white dark:bg-black ${isLastBlock ? "border-b-0" : ""}`}>
 			<div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:py-16 lg:px-8">
 				<div className="lg:w-0 lg:flex-1 max-w-[550px] mr-auto">
 					<h2 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl" id="order-site">

@@ -2,22 +2,32 @@ import bg from './img/bg.png';
 import Image from 'next/image';
 const AboutPromo = () => {
 	return (
-		<div className="bg-white">
-			<div className="relative bg-sky-800 py-24 sm:py-32">
-				<div className="absolute inset-0">
-					<Image src={bg} alt="About us" style={{objectFit: "cover", width: "100%", height: "100%"}} />
-					<div
-						className="absolute inset-0 backdrop-blur-sm bg-gray-900/70"
-						aria-hidden="true"
-					/>
-				</div>
-				<div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-					<h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">О нас</h1>
-					<p className="mt-6 max-w-4xl text-xl text-blue-100">
-						Мы - команда экспертов, готовых превратить ваши идеи в мощные веб-продукты!
+		<div className="relative bg-white flex items-center dark:bg-black min-h-[50vh] md:min-h-[60vh] overflow-hidden">
+			<div className="absolute z-0 top-0 left-0 right-0 bottom-0 overflow-hidden blur-[100px] select-none pointer-events-none" role="region">
+				<div className="grad grad-1"></div>
+				<div className="grad grad-2"></div>
+				<div className="grad grad-3"></div>
+			</div>
+			<div className="relative max-w-7xl mx-auto py-24 z-10 px-5">
+				<div className="text-center">
+					<h1 className="text-4xl xs:text-5xl font-bold tracking-tight text-black dark:text-white sm:text-5xl md:text-7xl">
+						Наша команда и история
+					</h1>
+					<p className="mx-auto mt-6 max-w-md text-lg text-gray-800 dark:text-white sm:text-lg md:mt-8 md:max-w-3xl md:text-2xl">
+						Мы - команда экспертов в веб-разработке, с фокусом на создание потрясающих и инновационных веб-решений
 					</p>
+					<div className="mx-auto mt-8 flex-col sm:flex-row flex justify-center gap-5 md:mt-12">
+						<button className="button button-white !text-black !text-lg">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+								<path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+							</svg>
+							Узнать больше
+						</button>
+						<button className="button button-blue !text-white !text-lg">Связаться с нами</button>
+					</div>
 				</div>
 			</div>
+			<div className="blob"></div>
 		</div>
 	)
 }

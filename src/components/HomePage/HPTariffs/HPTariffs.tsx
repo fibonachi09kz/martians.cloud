@@ -152,7 +152,7 @@ const HPTariffs = () => {
 									</div>
 									<div className="mt-4 text-sm">
 										<a href="#" className="font-medium text-gray-600 dark:text-gray-400">
-											Посмотреть кейсы
+											Посмотреть проекты
 										</a>
 									</div>
 								</div>
