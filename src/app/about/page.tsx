@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'О нас | Web-студия Martians',
 		description: 'Web-студия разработки сайтов',
-		url: '/',
+		url: '/about',
 		siteName: 'Martians',
 		images: [
 			{

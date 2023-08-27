@@ -1,6 +1,6 @@
 import './globals.css'
 import React from "react";
-import { Montserrat, Inter } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { ThemeProviderWrapper } from "@/providers/theme";
 
@@ -11,6 +11,7 @@ const inter = Inter({
 
 
 export const metadata = {
+	metadataBase: new URL('https://martians.kz'),
 	title: 'Главная | Web-студия Martians',
 	description: 'Web-студия разработки сайтов',
 }
