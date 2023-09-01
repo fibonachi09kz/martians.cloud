@@ -38,7 +38,7 @@ const Header = () => {
 						{navigation.map((item: NavigationItem) => {
 							const isActive = pathname === item.href
 							return (
-								<Link key={item.name} href={item.href} className={`text-base px-4 py-1 text-gray-600 dark:text-white/80 hover:text-black dark:hover:text-white font-normal transition-all leading-6 rounded-xl ${isActive ? 'bg-gray-200/60 dark:bg-gray-800/80 text-gray-900' : ''}`}>
+								<Link key={item.name} href={item.href} className={`text-base px-4 py-1 text-gray-600 dark:text-white/60 hover:text-black dark:hover:text-white font-normal transition-all leading-6 rounded-xl ${isActive ? 'bg-gray-200/60 dark:bg-gray-800/80 text-gray-900 dark:!text-white' : ''}`}>
 									{item.name}
 								</Link>
 							)
