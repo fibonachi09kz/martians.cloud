@@ -26,8 +26,8 @@ const Steps = ({ steps }: Props) => {
 				scrollTrigger: {
 					trigger: wrapper.current,
 					scrub: true,
-					start: 'top 700px',
-					end: 'bottom 700px',
+					start: 'top center',
+					end: 'bottom center',
 				},
 			});
 
@@ -44,8 +44,8 @@ const Steps = ({ steps }: Props) => {
 							self.trigger?.querySelector('.num')?.classList.remove('!bg-mainBlue');
 							self.trigger?.querySelector('.dot')?.classList.remove('!border-mainBlue');
 						},
-						start: '20px 700px',
-						end: "20px 700px",
+						start: '20px center',
+						end: "20px center",
 					});
 				})
 			}

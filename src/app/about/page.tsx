@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout/Layout";
 import AboutPromo from "@/components/AboutPage/AboutPromo/AboutPromo";
-import AboutFeatures from "@/components/AboutPage/AboutFeatures/AboutFeatures";
 import { Metadata } from 'next'
+import AboutTeam from "@/components/AboutPage/AboutTeam/AboutTeam";
 
 export const metadata: Metadata = {
 	title: 'О нас | Web-студия Martians',
@@ -33,7 +33,7 @@ const AboutPage = () => {
 	return (
 		<Layout>
 			<AboutPromo />
-			{/*<AboutFeatures />*/}
+			<AboutTeam />
 		</Layout>
 	)
 }

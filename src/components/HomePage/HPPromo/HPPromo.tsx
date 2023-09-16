@@ -1,5 +1,6 @@
 import {ChevronRightIcon} from "@heroicons/react/20/solid";
 import HPGlobe from "@/components/HomePage/HPPromo/HPGlobe";
+import Link from "next/link";
 
 const HPPromo = () => {
 	return (
@@ -8,8 +9,8 @@ const HPPromo = () => {
 				<div className="lg:grid lg:grid-cols-2 lg:gap-8">
 					<div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
 						<div className="lg:py-24">
-							<a
-								href="#"
+							<Link
+								href="/about"
 								className="inline-flex items-center border border-gray-300 dark:border-gray-800 rounded-full p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
 							>
 								<span className="rounded-full bg-mainBlue px-3 py-0.5 text-sm font-semibold leading-5 text-white">
@@ -17,7 +18,7 @@ const HPPromo = () => {
 								</span>
 								<span className="ml-4 text-sm text-black dark:text-white">Подробнее о компании</span>
 								<ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
-							</a>
+							</Link>
 							<h1 className="mt-4 text-4xl font-bold tracking-tight text-black dark:text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
 								<span className="block">Разработка сайтов</span>
 								<span className="block text-mainBlue">по всему миру</span>
