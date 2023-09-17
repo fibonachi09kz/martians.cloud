@@ -1,4 +1,5 @@
 import danila from '@/components/AboutPage/AboutTeam/media/team/danila.webp';
+import vadim from '@/components/AboutPage/AboutTeam/media/team/vadim.webp';
 import Image from "next/image";
 
 const people = [
@@ -7,6 +8,12 @@ const people = [
         name: 'Alexin Danila',
         role: 'Founder of "Martians"',
         imageUrl: danila
+    },
+    {
+        id: 2,
+        name: 'Popchenya Vadim',
+        role: 'Frontend Developer',
+        imageUrl: vadim
     },
 ]
 
