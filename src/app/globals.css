@@ -51,7 +51,7 @@
 	@apply bg-gray-600 hover:bg-gray-700 text-white hover:text-white
 }
 .button-white {
-	@apply bg-white hover:bg-background text-mainBlue hover:text-mainBlue
+	@apply bg-white hover:bg-gray-300 text-mainBlue hover:text-mainBlue
 }
 a {
 	@apply hover:text-mainBlue dark:hover:text-mainBlue

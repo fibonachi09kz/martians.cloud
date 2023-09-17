@@ -2,6 +2,7 @@ import Layout from "@/components/Layout/Layout";
 import AboutPromo from "@/components/AboutPage/AboutPromo/AboutPromo";
 import { Metadata } from 'next'
 import AboutTeam from "@/components/AboutPage/AboutTeam/AboutTeam";
+import AboutHistory from "@/components/AboutPage/AboutHistory/AboutHistory";
 
 export const metadata: Metadata = {
 	title: 'О нас | Web-студия Martians',
@@ -34,6 +35,7 @@ const AboutPage = () => {
 		<Layout>
 			<AboutPromo />
 			<AboutTeam />
+			<AboutHistory />
 		</Layout>
 	)
 }

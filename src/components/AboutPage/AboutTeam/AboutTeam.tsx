@@ -1,4 +1,5 @@
 import danila from '@/components/AboutPage/AboutTeam/media/team/danila.webp';
+import mariya from '@/components/AboutPage/AboutTeam/media/team/mariya.webp';
 import vadim from '@/components/AboutPage/AboutTeam/media/team/vadim.webp';
 import Image from "next/image";
 
@@ -11,6 +12,12 @@ const people = [
     },
     {
         id: 2,
+        name: 'Nikulshina Mariya',
+        role: 'Commercial Director',
+        imageUrl: mariya
+    },
+    {
+        id: 3,
         name: 'Popchenya Vadim',
         role: 'Frontend Developer',
         imageUrl: vadim
@@ -35,7 +42,7 @@ const AboutTeam = () => {
                         {people.map((person) => (
                             <li key={person.id}>
                                 <div className="space-y-4">
-                                    <Image src={person.imageUrl} alt="Person image" className="mx-auto h-20 w-20 rounded-full lg:h-32 lg:w-32" />
+                                    <Image src={person.imageUrl} alt="Person image" className="mx-auto h-32 w-32 rounded-full" />
                                     <div className="space-y-2">
                                         <div className="text-xs font-medium lg:text-sm">
                                             <h3>{person.name}</h3>

@@ -8,7 +8,7 @@ interface ThemeProviderWrapperProps {
 
 export function ThemeProviderWrapper({ children }: ThemeProviderWrapperProps) {
 	return (
-		<ThemeProvider attribute="class">
+		<ThemeProvider attribute="class" defaultTheme="dark">
 			{children}
 		</ThemeProvider>
 	);
