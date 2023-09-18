@@ -1,6 +1,7 @@
 import danila from '@/components/AboutPage/AboutTeam/media/team/danila.webp';
 import mariya from '@/components/AboutPage/AboutTeam/media/team/mariya.webp';
 import vadim from '@/components/AboutPage/AboutTeam/media/team/vadim.webp';
+import andrey from '@/components/AboutPage/AboutTeam/media/team/andrey.webp';
 import Image from "next/image";
 
 const people = [
@@ -12,12 +13,18 @@ const people = [
     },
     {
         id: 2,
+        name: 'Kalitin Andrey',
+        role: 'Co-Founder of "Martians"',
+        imageUrl: andrey
+    },
+    {
+        id: 3,
         name: 'Nikulshina Mariya',
         role: 'Commercial Director',
         imageUrl: mariya
     },
     {
-        id: 3,
+        id: 4,
         name: 'Popchenya Vadim',
         role: 'Frontend Developer',
         imageUrl: vadim
