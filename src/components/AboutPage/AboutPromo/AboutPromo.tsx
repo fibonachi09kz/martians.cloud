@@ -1,5 +1,6 @@
 import bg from './img/bg.png';
 import Image from 'next/image';
+import Link from "next/link";
 const AboutPromo = () => {
 	return (
 		<div className="relative bg-white flex items-center dark:bg-black min-h-[50vh] md:min-h-[60vh] overflow-hidden">
@@ -23,7 +24,7 @@ const AboutPromo = () => {
 							</svg>
 							Узнать больше
 						</button>
-						<button className="button button-blue !text-white sm:!text-lg">Связаться с нами</button>
+						<Link href="/contacts" className="button button-blue !text-white sm:!text-lg">Связаться с нами</Link>
 					</div>
 				</div>
 			</div>
