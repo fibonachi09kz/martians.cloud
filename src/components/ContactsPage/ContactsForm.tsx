@@ -110,7 +110,7 @@ const ContactsForm = () => {
                             {socials.map((social) => (
                                 <div
                                     key={social.id}
-                                    className="relative transition-all flex items-center space-x-3 rounded-lg border border-gray-300 dark:border-white/20 bg-white dark:bg-black px-3 py-2 shadow-sm focus-within:ring-2 focus-within:ring-mainBlue focus-within:ring-offset-2 focus-within:ring-offset-white dark:focus-within:ring-offset-black hover:border-gray-400 dark:hover:border-gray-400"
+                                    className="relative transition-all flex items-center space-x-3 rounded-lg border border-gray-300 dark:border-white/20 bg-white dark:bg-black px-3 py-2 focus-within:ring-2 focus-within:ring-mainBlue focus-within:ring-offset-2 focus-within:ring-offset-white dark:focus-within:ring-offset-black hover:border-gray-400 dark:hover:border-gray-400"
                                 >
                                     <div className="flex-shrink-0">
                                         <Image className="h-8 w-8 rounded-md" width={32} height={32} src={social.image} alt="Social image" />
@@ -202,6 +202,7 @@ const ContactsForm = () => {
                                     <div className="text-sm text-red-500">{formik.errors.message}</div>
                                 ) : null}
                             </div>
+                            <p className="mt-1 text-gray-600 dark:text-gray-400 text-sm">Отправляя данную форму, я подтверждаю, что согласен с <a href="" className="text-mainBlue hover:text-mainBlueDarker ">политикой конфиденциальности</a></p>
                             <div className="flex-col sm:flex-row gap-5 flex items-center justify-between">
                                 {success && !sending ? (
                                     <p className="flex gap-1 items-center text-green-600 dark:text-green-500 py-1 px-2 w-fit text-sm rounded-md bg-green-100 dark:bg-green-950 border border-green-600 dark:border-green-500">
