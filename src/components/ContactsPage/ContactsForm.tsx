@@ -4,14 +4,13 @@ import {Cog6ToothIcon, EnvelopeIcon, PhoneIcon} from '@heroicons/react/24/outlin
 import Input from "@/components/UI/Input";
 import Textarea from "@/components/UI/Textarea";
 import emailjs from '@emailjs/browser';
-import {Formik, useFormik} from "formik";
+import { useFormik } from "formik";
 import * as Yup from 'yup';
 import {useRef, useState} from "react";
-import cn from 'classnames';
 import Link from "next/link";
 import Image from "next/image";
 
-import wp from './media/socials/wp.png';
+import wp from './media/socials/wp.svg';
 import tg from './media/socials/tg.svg';
 
 
