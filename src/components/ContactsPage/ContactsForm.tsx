@@ -1,6 +1,6 @@
 'use client';
 
-import {Cog6ToothIcon, EnvelopeIcon, PhoneIcon} from '@heroicons/react/24/outline'
+import {Cog6ToothIcon, EnvelopeIcon, ExclamationTriangleIcon, PhoneIcon} from '@heroicons/react/24/outline'
 import Input from "@/components/UI/Input";
 import Textarea from "@/components/UI/Textarea";
 import emailjs from '@emailjs/browser';
@@ -12,6 +12,7 @@ import Image from "next/image";
 
 import wp from './media/socials/wp.svg';
 import tg from './media/socials/tg.svg';
+import {CheckCircleIcon} from "@heroicons/react/20/solid";
 
 
 const socials = [
@@ -109,7 +110,7 @@ const ContactsForm = () => {
                             {socials.map((social) => (
                                 <div
                                     key={social.id}
-                                    className="relative transition-all hover:shadow-sm hover:shadow-mainBlue flex items-center space-x-3 rounded-lg border border-gray-300 dark:border-white/20 bg-white dark:bg-black px-3 py-2 shadow-sm focus-within:ring-2 focus-within:ring-mainBlue focus-within:ring-offset-2 focus-within:ring-offset-white dark:focus-within:ring-offset-black hover:border-gray-400"
+                                    className="relative transition-all flex items-center space-x-3 rounded-lg border border-gray-300 dark:border-white/20 bg-white dark:bg-black px-3 py-2 shadow-sm focus-within:ring-2 focus-within:ring-mainBlue focus-within:ring-offset-2 focus-within:ring-offset-white dark:focus-within:ring-offset-black hover:border-gray-400 dark:hover:border-gray-400"
                                 >
                                     <div className="flex-shrink-0">
                                         <Image className="h-8 w-8 rounded-md" width={32} height={32} src={social.image} alt="Social image" />
@@ -203,10 +204,16 @@ const ContactsForm = () => {
                             </div>
                             <div className="flex-col sm:flex-row gap-5 flex items-center justify-between">
                                 {success && !sending ? (
-                                    <p className="text-green-600 dark:text-green-500 py-1 px-2 w-fit text-sm rounded-md bg-green-100 dark:bg-green-950 border border-green-600 dark:border-green-500">Сообщение успешно отправлено</p>
+                                    <p className="flex gap-1 items-center text-green-600 dark:text-green-500 py-1 px-2 w-fit text-sm rounded-md bg-green-100 dark:bg-green-950 border border-green-600 dark:border-green-500">
+                                        <CheckCircleIcon className="h-5 w-5" />
+                                        Сообщение успешно отправлено
+                                    </p>
                                 ): null}
                                 {error && !sending ? (
-                                    <p className="text-red-600 dark:text-red-500 py-1 px-2 w-fit text-sm rounded-md bg-red-100 dark:bg-red-950 border border-red-600 dark:border-red-500">Сообщение не отправлено, попробуйте позднее</p>
+                                    <p className="flex gap-1 items-center text-red-600 dark:text-red-500 py-1 px-2 w-fit text-sm rounded-md bg-red-100 dark:bg-red-950 border border-red-600 dark:border-red-500">
+                                        <ExclamationTriangleIcon className="h-5 w-5" />
+                                        Сообщение не отправлено, попробуйте позднее
+                                    </p>
                                 ): null}
 
                                 <button
