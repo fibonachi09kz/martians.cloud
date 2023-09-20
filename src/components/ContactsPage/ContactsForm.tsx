@@ -86,7 +86,7 @@ const ContactsForm = () => {
             <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
                 <div className="sm:py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12 sm:border-r border-gray-300 dark:border-white/20">
                     <div className="mx-auto max-w-lg">
-                        <h2 className="text-3xl font-bold text-black dark:text-white tracking-tight sm:text-4xl">Связаться с нами</h2>
+                        <h1 className="text-3xl font-bold text-black dark:text-white tracking-tight sm:text-4xl">Связаться с нами</h1>
                         <p className="mt-3 text-lg leading-6 text-gray-600 dark:text-gray-400">
                             Мы поможем вам подобрать правильный тарифный план и стратегию для вашего бизнеса.
                         </p>
@@ -142,7 +142,7 @@ const ContactsForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.name}
-                                    className={formik.errors.name ? 'border-red-500 dark:border-red-500' : ''}
+                                    className={formik.errors.name ? 'border-red-500 dark:!border-red-500' : ''}
                                 />
                                 {formik.touched.name && formik.errors.name ? (
                                     <div className="text-sm text-red-500">{formik.errors.name}</div>
@@ -160,7 +160,7 @@ const ContactsForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.email}
-                                    className={formik.errors.email ? 'border-red-500 dark:border-red-500' : ''}
+                                    className={formik.errors.email ? 'border-red-500 dark:!border-red-500' : ''}
                                 />
                                 {formik.touched.email && formik.errors.email ? (
                                     <div className="text-sm text-red-500">{formik.errors.email}</div>
@@ -178,7 +178,7 @@ const ContactsForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.phone}
-                                    className={formik.errors.phone ? 'border-red-500 dark:border-red-500' : ''}
+                                    className={formik.errors.phone ? 'border-red-500 dark:!border-red-500' : ''}
                                 />
                                 {formik.touched.phone && formik.errors.phone ? (
                                     <div className="text-sm text-red-500">{formik.errors.phone}</div>
@@ -196,7 +196,7 @@ const ContactsForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.message}
-                                    className={formik.errors.message ? 'border-red-500 dark:border-red-500' : ''}
+                                    className={formik.errors.message ? 'border-red-500 dark:!border-red-500' : ''}
                                 />
                                 {formik.touched.message && formik.errors.message ? (
                                     <div className="text-sm text-red-500">{formik.errors.message}</div>
