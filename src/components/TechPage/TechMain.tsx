@@ -24,7 +24,7 @@ const TechMain = ({ technologies }: Props) => {
 
 				<div className="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
 					{types.map((type: string) => (
-						<div>
+						<div key={type}>
 							<h3 className="text-xl font-light mb-3">{type}</h3>
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-5">
 								{technologies.filter((tech: TechnologyInterface) => tech.acf.type.name === type).map((technology: TechnologyInterface) => (
