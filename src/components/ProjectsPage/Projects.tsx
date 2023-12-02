@@ -30,7 +30,7 @@ const Projects = () => {
 					</div>
 				</div>
 				<div className="mt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-					<label className="block text-sm text-black mb-1">
+					<label className="block text-sm text-black dark:text-white mb-1">
 						Категория
 					</label>
 					<Listbox value={selected} onChange={setSelected}>

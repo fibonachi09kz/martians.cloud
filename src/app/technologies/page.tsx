@@ -1,14 +1,15 @@
 import Layout from "@/components/Layout/Layout";
 import { Metadata } from 'next'
 import TechMain from "@/components/TechPage/TechMain";
+import {API_ENDPOINTS} from "@/constants/API";
 
 export const metadata: Metadata = {
 	title: 'Технологии | Web-студия Martians',
 	description: 'Web-студия разработки сайтов',
 	openGraph: {
-		title: 'Контакты | Web-студия Martians',
+		title: 'Технологии | Web-студия Martians',
 		description: 'Web-студия разработки сайтов',
-		url: '/tech',
+		url: '/technologies',
 		siteName: 'Martians',
 		images: [
 			{
@@ -28,10 +29,21 @@ export const metadata: Metadata = {
 	},
 }
 
-const TechPage = () => {
+async function getData() {
+	const res = await fetch(`${API_ENDPOINTS.TECHNOLOGIES_POINT}?acf&acf_format=standard`, { next: { revalidate: 3600 } });
+	if (!res.ok) {
+		// This will activate the closest `error.js` Error Boundary
+		throw new Error('Failed to fetch data')
+	}
+	return res.json()
+}
+
+const TechPage = async () => {
+	const data = await getData()
+
 	return (
 		<Layout>
-			<TechMain />
+			<TechMain technologies={data} />
 		</Layout>
 	)
 }
