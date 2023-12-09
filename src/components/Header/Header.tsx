@@ -9,6 +9,7 @@ import {NavigationItem} from "@/types/NavigationTypes";
 import {RocketLaunchIcon} from "@heroicons/react/24/outline";
 import Logo from "@/components/Logo/Logo";
 import ThemeSwitcher from "@/components/Header/ThemeSwitcher";
+import {Button} from "@nextui-org/react";
 
 const Header = () => {
 
@@ -33,6 +34,9 @@ const Header = () => {
 							<span className="sr-only">Open main menu</span>
 							<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 						</button>
+						<Button color="primary">
+							Button
+						</Button>
 					</div>
 					<div className="hidden xl:flex lg:gap-x-12">
 						{navigation.map((item: NavigationItem) => {

@@ -3,6 +3,8 @@ import React from "react";
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { ThemeProviderWrapper } from "@/providers/theme";
+import {NextUIProvider} from "@nextui-org/react";
+import {Providers} from "@/app/providers";
 
 const inter = Inter({
 	subsets: ['cyrillic'],
@@ -21,7 +23,9 @@ export default function RootLayout({ children }: {children: React.ReactNode }) {
 		<html lang="en" suppressHydrationWarning>
 			<body className={`${inter.className} min-h-screen flex flex-col`}>
 				<ThemeProviderWrapper>
-					{children}
+					<Providers>
+						{children}
+					</Providers>
 				</ThemeProviderWrapper>
 			</body>
 			<Analytics />
