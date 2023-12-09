@@ -41,21 +41,6 @@
 }
 
 
-.button {
-	@apply bg-transparent px-5 py-2 rounded-xl text-gray-900 transition-all font-medium text-center flex items-center justify-center gap-2 text-base
-}
-.button-blue {
-	@apply bg-mainBlue hover:bg-mainBlueDarker text-white hover:text-white dark:hover:text-white
-}
-.button-gray {
-	@apply bg-gray-600 hover:bg-gray-700 text-white hover:text-white
-}
-.button-white {
-	@apply bg-white hover:bg-gray-300 text-mainBlue hover:text-mainBlue
-}
-a {
-	@apply hover:text-mainBlue dark:hover:text-mainBlue
-}
 .linear-swiper .swiper-wrapper {
 	transition-timing-function: linear;
 }
@@ -184,3 +169,4 @@ a {
 		height: 200px;
 	}
 }
+

@@ -1,6 +1,8 @@
+'use client'
 import {ChevronRightIcon} from "@heroicons/react/20/solid";
 import HPGlobe from "@/components/HomePage/HPPromo/HPGlobe";
-import Link from "next/link";
+import {Button, Checkbox, Input, Link} from "@nextui-org/react";
+import {MailIcon} from "@nextui-org/shared-icons";
 
 const HPPromo = () => {
 	return (
@@ -13,15 +15,15 @@ const HPPromo = () => {
 								href="/about"
 								className="inline-flex items-center border border-gray-300 dark:border-gray-800 rounded-full p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
 							>
-								<span className="rounded-full bg-mainBlue px-3 py-0.5 text-sm font-semibold leading-5 text-white">
-								  Martians.kz
+								<span className="rounded-full bg-primary px-3 py-0.5 text-sm font-semibold leading-5 text-white">
+								  	Martians.kz
 								</span>
 								<span className="ml-4 text-sm text-black dark:text-white">Подробнее о компании</span>
 								<ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
 							</Link>
 							<h1 className="mt-4 text-4xl font-bold tracking-tight text-black dark:text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
 								<span className="block">Разработка сайтов</span>
-								<span className="block text-mainBlue">по всему миру</span>
+								<span className="block text-primary">по всему миру</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-600 dark:text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
 								Наша компания специализируется на создании современных, быстрых, а главное - индивидуальных сайтов
@@ -30,27 +32,31 @@ const HPPromo = () => {
 								<form action="#" className="sm:mx-auto sm:max-w-xl lg:mx-0">
 									<div className="sm:flex">
 										<div className="min-w-0 flex-1">
-											<label htmlFor="email" className="sr-only">
-												Email address
-											</label>
-											<input
-												id="email"
+											<Input
+												size="sm"
 												type="email"
-												placeholder="Ваша почта"
-												className="block w-full bg-transparent border border-gray-300 dark:border-white/20 rounded-md px-4 py-3 text-base text-gray-900 dark:text-white dark:placeholder-gray-400 focus:ring-0 focus:ring-transparent focus:outline-none focus:outline-0 dark:focus:border-mainBlue"
+												placeholder="Введите свой email"
+												variant="bordered"
+												classNames={{
+													inputWrapper: 'border-1',
+													input: 'text-base'
+												}}
 											/>
 										</div>
 										<div className="mt-3 sm:mt-0 sm:ml-3">
-											<button
-												type="submit"
-												className="block w-full rounded-md bg-mainBlue py-3 px-4 font-medium text-white shadow hover:bg-mainBlueDarker focus:outline-none focus:ring-2 focus:ring-mainBlueDarker focus:ring-offset-2 focus:ring-offset-gray-900"
+											<Button
+												size="lg"
+												radius="sm"
+												color="primary"
+												className="text-base font-medium"
+												type="button"
 											>
 												Заказать сайт
-											</button>
+											</Button>
 										</div>
 									</div>
 									<p className="mt-3 text-sm text-gray-600 dark:text-gray-300 sm:mt-4">
-										Оставьте свою почту, и мы отправим вам <a href="#" className="font-medium text-mainBlue">бриф</a> для заполнения, чтобы создать общее представление о вашем проекте
+										Оставьте свою почту, и мы отправим вам  <Link href="#" className="font-medium text-sm">бриф</Link> для заполнения, чтобы создать общее представление о вашем проекте
 									</p>
 								</form>
 							</div>

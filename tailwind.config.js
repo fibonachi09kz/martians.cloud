@@ -12,15 +12,12 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				background: '#f2f2f2',
-				mainBlue: '#07f',
-				mainBlueDarker: '#0064de'
+				background: '#f2f2f2'
 			}
 		},
 	},
 	plugins: [
-		require('@tailwindcss/forms'),
 		require('tailwind-scrollbar-hide'),
 		nextui()
-	],
+	]
 }

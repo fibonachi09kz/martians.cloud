@@ -1,16 +1,15 @@
+'use client'
 import TechSingle from "@/components/TechPage/TechSingle";
 import {TechnologyInterface} from "@/types/Technology";
 
 type Props = {
-	technologies: TechnologyInterface[]
+	technologies: TechnologyInterface[];
+	categories: any[];
 }
 
-const TechMain = ({ technologies }: Props) => {
+const TechMain = ({ technologies, categories }: Props) => {
 
-	const typesSet: Set<string> = new Set(technologies.map((tech: TechnologyInterface) => {
-		return tech.acf.type.name
-	}))
-	const types = [...typesSet];
+	console.log(technologies, categories)
 
 	return (
 		<section className="flex-1 bg-white dark:bg-black">
@@ -23,11 +22,11 @@ const TechMain = ({ technologies }: Props) => {
 				</div>
 
 				<div className="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
-					{types.map((type: string) => (
-						<div key={type}>
-							<h3 className="text-xl font-light mb-3">{type}</h3>
+					{categories.sort((a, b) => Number(a.acf['sort-order']) - Number(b.acf['sort-order'])).map((type) => (
+						<div key={type.id}>
+							<h3 className="text-3xl text-center text-gray-600 mb-5">{type.name}</h3>
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-5">
-								{technologies.filter((tech: TechnologyInterface) => tech.acf.type.name === type).map((technology: TechnologyInterface) => (
+								{technologies.filter((tech: TechnologyInterface) => tech.acf.type.name === type.name).map((technology: TechnologyInterface) => (
 									<TechSingle key={technology.id} technology={technology} />
 								))}
 							</div>

@@ -1,8 +1,7 @@
 'use client';
 
-import {Cog6ToothIcon, EnvelopeIcon, ExclamationTriangleIcon, PhoneIcon} from '@heroicons/react/24/outline'
-import Input from "@/components/UI/Input";
-import Textarea from "@/components/UI/Textarea";
+import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import {Button, Input, Textarea} from "@nextui-org/react";
 import emailjs from '@emailjs/browser';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
@@ -90,22 +89,6 @@ const ContactsForm = () => {
                         <p className="mt-3 text-lg leading-6 text-gray-600 dark:text-gray-400">
                             Мы поможем вам подобрать правильный тарифный план и стратегию для вашего бизнеса.
                         </p>
-                        {/*<dl className="mt-8 text-base text-gray-600 dark:text-gray-400">*/}
-                        {/*    <div className="mt-6">*/}
-                        {/*        <dt className="sr-only">Phone number</dt>*/}
-                        {/*        <dd className="flex">*/}
-                        {/*            <PhoneIcon className="h-6 w-6 flex-shrink-0 text-gray-600 dark:text-gray-400" aria-hidden="true" />*/}
-                        {/*            <Link href="tel:+77773003560" className="ml-3">+7 (777) 300-35-60</Link>*/}
-                        {/*        </dd>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="mt-3">*/}
-                        {/*        <dt className="sr-only">Email</dt>*/}
-                        {/*        <dd className="flex">*/}
-                        {/*            <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-gray-600 dark:text-gray-400" aria-hidden="true" />*/}
-                        {/*            <Link href="mailto:top@martians.cloud" className="ml-3">top@martians.cloud</Link>*/}
-                        {/*        </dd>*/}
-                        {/*    </div>*/}
-                        {/*</dl>*/}
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 mt-8">
                             {socials.map((social) => (
                                 <div
@@ -135,6 +118,8 @@ const ContactsForm = () => {
                                     Ваше имя
                                 </label>
                                 <Input
+                                    size="sm"
+                                    variant="bordered"
                                     id="full-name"
                                     name="name"
                                     placeholder="Ваше имя"
@@ -142,10 +127,14 @@ const ContactsForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.name}
-                                    className={formik.errors.name ? 'border-red-500 dark:!border-red-500' : ''}
+                                    isInvalid={!!formik.touched.name && !!formik.errors.name}
+                                    classNames={{
+                                        inputWrapper: 'border-1',
+                                        input: 'text-base'
+                                    }}
                                 />
                                 {formik.touched.name && formik.errors.name ? (
-                                    <div className="text-sm text-red-500">{formik.errors.name}</div>
+                                    <div className="text-sm text-danger">{formik.errors.name}</div>
                                 ) : null}
                             </div>
                             <div>
@@ -153,6 +142,8 @@ const ContactsForm = () => {
                                     Ваш Email
                                 </label>
                                 <Input
+                                    size="sm"
+                                    variant="bordered"
                                     id="email"
                                     name="email"
                                     placeholder="Ваш Email"
@@ -160,10 +151,14 @@ const ContactsForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.email}
-                                    className={formik.errors.email ? 'border-red-500 dark:!border-red-500' : ''}
+                                    isInvalid={!!formik.touched.email && !!formik.errors.email}
+                                    classNames={{
+                                        inputWrapper: 'border-1',
+                                        input: 'text-base'
+                                    }}
                                 />
                                 {formik.touched.email && formik.errors.email ? (
-                                    <div className="text-sm text-red-500">{formik.errors.email}</div>
+                                    <div className="text-sm text-danger">{formik.errors.email}</div>
                                 ) : null}
                             </div>
                             <div>
@@ -171,6 +166,8 @@ const ContactsForm = () => {
                                     Phone
                                 </label>
                                 <Input
+                                    size="sm"
+                                    variant="bordered"
                                     id="phone"
                                     name="phone"
                                     placeholder="Ваш телефон"
@@ -178,10 +175,14 @@ const ContactsForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.phone}
-                                    className={formik.errors.phone ? 'border-red-500 dark:!border-red-500' : ''}
+                                    isInvalid={!!formik.touched.phone && !!formik.errors.phone}
+                                    classNames={{
+                                        inputWrapper: 'border-1',
+                                        input: 'text-base'
+                                    }}
                                 />
                                 {formik.touched.phone && formik.errors.phone ? (
-                                    <div className="text-sm text-red-500">{formik.errors.phone}</div>
+                                    <div className="text-sm text-danger">{formik.errors.phone}</div>
                                 ) : null}
                             </div>
                             <div>
@@ -189,20 +190,26 @@ const ContactsForm = () => {
                                     Message
                                 </label>
                                 <Textarea
+                                    size="md"
+                                    variant="bordered"
+                                    placeholder="Введите ваше сообщение"
                                     id="message"
                                     name="message"
-                                    placeholder="Ваше сообщение"
                                     rows={4}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.message}
-                                    className={formik.errors.message ? 'border-red-500 dark:!border-red-500' : ''}
+                                    isInvalid={!!formik.touched.message && !!formik.errors.message}
+                                    classNames={{
+                                        inputWrapper: 'border-1',
+                                        input: 'text-base'
+                                    }}
                                 />
                                 {formik.touched.message && formik.errors.message ? (
-                                    <div className="text-sm text-red-500">{formik.errors.message}</div>
+                                    <div className="text-sm text-danger">{formik.errors.message}</div>
                                 ) : null}
                             </div>
-                            <p className="mt-1 text-gray-600 dark:text-gray-400 text-sm">Отправляя данную форму, вы подтверждаете, что согласны с <a href="" className="text-mainBlue hover:text-mainBlueDarker ">политикой конфиденциальности</a></p>
+                            <p className="mt-1 text-gray-600 dark:text-gray-400 text-sm">Отправляя данную форму, вы подтверждаете, что согласны с <Link href="" className="text-primary">политикой конфиденциальности</Link></p>
                             <div className="flex-col sm:flex-row gap-5 flex items-center justify-between">
                                 {success && !sending ? (
                                     <p className="flex gap-1 items-center text-green-600 dark:text-green-500 py-1 px-2 w-fit text-sm rounded-md bg-green-100 dark:bg-green-950 border border-green-600 dark:border-green-500">
@@ -216,17 +223,14 @@ const ContactsForm = () => {
                                         Сообщение не отправлено, попробуйте позднее
                                     </p>
                                 ): null}
-
-                                <button
+                                <Button
+                                    color="primary"
                                     type="submit"
-                                    className="button button-blue disabled:cursor-not-allowed sm:ml-auto"
-                                    disabled={sending}
+                                    isLoading={sending}
+                                    className="ml-auto"
                                 >
-                                    {sending ? (
-                                        <Cog6ToothIcon className="h-6 w-6 animate-spin duration-700" />
-                                    ): null}
                                     Отправить
-                                </button>
+                                </Button>
                             </div>
                         </form>
                     </div>

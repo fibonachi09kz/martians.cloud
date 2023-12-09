@@ -34,9 +34,6 @@ const Header = () => {
 							<span className="sr-only">Open main menu</span>
 							<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 						</button>
-						<Button color="primary">
-							Button
-						</Button>
 					</div>
 					<div className="hidden xl:flex lg:gap-x-12">
 						{navigation.map((item: NavigationItem) => {
@@ -49,10 +46,10 @@ const Header = () => {
 						})}
 					</div>
 					<div className="hidden xl:flex xl:flex-1 xl:justify-end">
-						<Link href="#" className="button button-blue">
+						<Button color="primary" radius="sm" className="text-base font-medium">
 							<RocketLaunchIcon className="h-5 w-5 text-white transition-all" aria-hidden="true"  />
 							Заказать
-						</Link>
+						</Button>
 					</div>
 					<div className="ml-4 hidden xl:block">
 						<ThemeSwitcher />

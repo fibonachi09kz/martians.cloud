@@ -1,6 +1,6 @@
-import Link from "next/link";
+'use client'
 import {CubeIcon} from "@heroicons/react/24/outline";
-import Logo from "@/components/Logo/Logo";
+import {Button} from "@nextui-org/react";
 const AboutHistory = () => {
 	return (
 		<div className="bg-white dark:bg-black">
@@ -37,9 +37,13 @@ const AboutHistory = () => {
 								<br/><br/>
 								Мы не останавливаемся перед невозможными задачами и готовы выложиться на все 100 процентов, чтобы создать уникальный продукт для каждого нашего клиента. Наша команда не довольствуется стандартами, она их устанавливает.
 							</p>
-							<button className="button button-blue !text-white shadow sm:!text-lg mt-12">Заказать сайт
+							<Button
+								color="primary"
+								size="md"
+								className="text-base font-medium mt-12"
+							>Заказать сайт
 								<CubeIcon className="w-6 h-6" />
-							</button>
+							</Button>
 						</div>
 					</div>
 				</div>

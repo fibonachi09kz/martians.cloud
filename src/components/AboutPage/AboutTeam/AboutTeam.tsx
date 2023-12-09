@@ -53,7 +53,7 @@ const AboutTeam = () => {
                                     <div className="space-y-2">
                                         <div className="text-xs font-medium lg:text-sm">
                                             <h3>{person.name}</h3>
-                                            <p className="text-mainBlue">{person.role}</p>
+                                            <p className="text-primary">{person.role}</p>
                                         </div>
                                     </div>
                                 </div>

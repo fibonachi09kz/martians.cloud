@@ -29,8 +29,16 @@ export const metadata: Metadata = {
 	},
 }
 
-async function getData() {
+async function getTechnologies() {
 	const res = await fetch(`${API_ENDPOINTS.TECHNOLOGIES_POINT}?acf&acf_format=standard`, { next: { revalidate: 3600 } });
+	if (!res.ok) {
+		// This will activate the closest `error.js` Error Boundary
+		throw new Error('Failed to fetch data')
+	}
+	return res.json()
+}
+async function getCategories() {
+	const res = await fetch(`${API_ENDPOINTS.TECHNOLOGIES_CATEGORIES_POINT}?acf&acf_format=standard`, { next: { revalidate: 3600 } });
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
 		throw new Error('Failed to fetch data')
@@ -39,11 +47,12 @@ async function getData() {
 }
 
 const TechPage = async () => {
-	const data = await getData()
+	const technologies = await getTechnologies();
+	const categories = await getCategories();
 
 	return (
 		<Layout>
-			<TechMain technologies={data} />
+			<TechMain technologies={technologies} categories={categories} />
 		</Layout>
 	)
 }

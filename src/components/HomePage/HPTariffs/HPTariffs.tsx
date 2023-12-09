@@ -1,5 +1,7 @@
+'use client'
 import {CheckCircleIcon} from "@heroicons/react/20/solid";
 import Link from "next/link";
+import {Button} from "@nextui-org/react";
 
 const tariffs = [
 	{
@@ -136,19 +138,18 @@ const HPTariffs = () => {
 										<span>{tariff.price}</span>
 									</div>
 									<p className="mt-6 text-sm">
-										<Link href={tariff.stepLink} className="font-medium text-gray-500 dark:text-gray-400 py-1 px-3 border rounded-full border-gray-300 dark:border-white/20">
+										<Link href={tariff.stepLink} className="font-medium text-gray-500 dark:text-gray-400 py-1 px-3 border rounded-full border-gray-300 dark:border-white/20 hover:text-primary">
 											Изучить процесс разработки
 										</Link>
 									</p>
 									<div className="mt-6">
-										<div className="rounded-md shadow">
-											<a
-												href="#"
-												className="button button-blue"
-											>
-												Заказать сайт
-											</a>
-										</div>
+										<Button
+											color="primary"
+											radius="sm"
+											className="w-full text-base font-medium"
+										>
+											Заказать сайт
+										</Button>
 									</div>
 									<div className="mt-4 text-sm">
 										<a href="#" className="font-medium text-gray-600 dark:text-gray-400">
