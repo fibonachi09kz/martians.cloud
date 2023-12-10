@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 }
 
 async function getTechnologies() {
-	const res = await fetch(`${API_ENDPOINTS.TECHNOLOGIES_POINT}?acf&acf_format=standard`, { next: { revalidate: 3600 } });
+	const res = await fetch(`${API_ENDPOINTS.TECHNOLOGIES_POINT}?acf&acf_format=standard&per_page=100`, { next: { revalidate: 1800 } });
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
 		throw new Error('Failed to fetch data')
@@ -38,7 +38,7 @@ async function getTechnologies() {
 	return res.json()
 }
 async function getCategories() {
-	const res = await fetch(`${API_ENDPOINTS.TECHNOLOGIES_CATEGORIES_POINT}?acf&acf_format=standard`, { next: { revalidate: 3600 } });
+	const res = await fetch(`${API_ENDPOINTS.TECHNOLOGIES_CATEGORIES_POINT}?acf&acf_format=standard&per_page=100`, { next: { revalidate: 1800 } });
 	if (!res.ok) {
 		// This will activate the closest `error.js` Error Boundary
 		throw new Error('Failed to fetch data')
