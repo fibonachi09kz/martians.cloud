@@ -43,7 +43,7 @@ const TechMain = ({ technologies, categories }: Props) => {
 						</div>
 					))}
 				</div>
-				{selectedTech && <TechModal technology={selectedTech} onClose={handleCloseModal} />}
+				<TechModal technology={selectedTech} onClose={handleCloseModal} />
 			</div>
 		</section>
 	)
