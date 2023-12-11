@@ -1,6 +1,8 @@
 'use client'
 import TechSingle from "@/components/TechPage/TechSingle";
 import {TechnologyInterface} from "@/types/Technology";
+import {useState} from "react";
+import TechModal from "@/components/TechPage/TechModal";
 
 type Props = {
 	technologies: TechnologyInterface[];
@@ -9,7 +11,15 @@ type Props = {
 
 const TechMain = ({ technologies, categories }: Props) => {
 
-	console.log(technologies, categories)
+	const [selectedTech, setSelectedTech] = useState<TechnologyInterface | null>(null);
+
+	const handleCardClick = (tech: TechnologyInterface) => {
+		setSelectedTech(tech);
+	};
+
+	const handleCloseModal = () => {
+		setSelectedTech(null);
+	};
 
 	return (
 		<section className="flex-1 bg-white dark:bg-black">
@@ -24,15 +34,16 @@ const TechMain = ({ technologies, categories }: Props) => {
 				<div className="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
 					{categories.sort((a, b) => Number(a.acf['sort-order']) - Number(b.acf['sort-order'])).map((type) => (
 						<div key={type.id}>
-							<h3 className="text-3xl text-center text-gray-600 mb-5">{type.name}</h3>
-							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-5">
+							<h3 className="text-3xl text-center text-gray-600 mb-5 dark:text-white">{type.name}</h3>
+							<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-8 gap-5">
 								{technologies.filter((tech: TechnologyInterface) => tech.acf.type.name === type.name).map((technology: TechnologyInterface) => (
-									<TechSingle key={technology.id} technology={technology} />
+									<TechSingle key={technology.id} technology={technology} onClick={handleCardClick}  />
 								))}
 							</div>
 						</div>
 					))}
 				</div>
+				{selectedTech && <TechModal technology={selectedTech} onClose={handleCloseModal} />}
 			</div>
 		</section>
 	)
