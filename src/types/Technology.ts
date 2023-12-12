@@ -23,6 +23,7 @@ export interface TechnologyInterface {
 		icon: ImageInterface;
 		descr: string;
 		type: TaxonomyInterface;
+		'sort-order': string;
 		url: string;
 	};
 	_links: {

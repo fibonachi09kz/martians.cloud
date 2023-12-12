@@ -1,5 +1,6 @@
 'use client'
 import {Button, Checkbox, Input, Link} from "@nextui-org/react";
+import HPCtaForm from "@/components/HomePage/HPCta/HPCtaForm";
 
 interface Props {
 	isLastBlock?: boolean
@@ -17,33 +18,7 @@ const HPCta = ({ isLastBlock }: Props) => {
 					</p>
 				</div>
 				<div className="mt-8 lg:mt-0 lg:ml-8 w-full max-w-[470px]">
-					<form action="#" className="">
-						<div className="sm:flex">
-							<div className="min-w-0 flex-1">
-								<Input
-									size="sm"
-									type="email"
-									placeholder="Введите свой email"
-									variant="bordered"
-									classNames={{
-										inputWrapper: 'border-1',
-										input: 'text-base'
-									}}
-								/>
-							</div>
-							<div className="mt-3 sm:mt-0 sm:ml-3">
-								<Button
-									size="lg"
-									radius="sm"
-									color="primary"
-									className="text-base font-medium"
-									type="button"
-								>
-									Заказать сайт
-								</Button>
-							</div>
-						</div>
-					</form>
+					<HPCtaForm />
 				</div>
 			</div>
 		</div>

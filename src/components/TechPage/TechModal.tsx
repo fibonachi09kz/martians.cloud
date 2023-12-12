@@ -4,7 +4,7 @@ import Image from "next/image";
 import {ImageInterface} from "@/types/Image";
 import {Button} from "@nextui-org/react";
 import {GlobeAltIcon, XMarkIcon} from "@heroicons/react/24/outline";
-import {useEffect, useState} from "react";
+import {useCallback, useEffect, useState} from "react";
 import Link from "next/link";
 
 type Props = {
@@ -14,9 +14,9 @@ type Props = {
 
 const TechModal = ({ technology, onClose }: Props) => {
 
-	function closeModal() {
-		onClose()
-	}
+	const closeModal = useCallback(() => {
+		onClose();
+	}, [onClose]);
 
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
@@ -62,8 +62,7 @@ const TechModal = ({ technology, onClose }: Props) => {
 						<p className="text-3xl text-black dark:text-white text-center mt-6">{technology.title.rendered}</p>
 						<p className="text-lg text-black dark:text-white text-center mt-4">{technology.acf.descr}</p>
 						{technology.acf.url && (
-							<Link href={technology.acf.url} target="_blank" rel="noreferrer" className="flex flex-col sm:flex-row gap-2 items-center justify-center mt-4">
-								<GlobeAltIcon className="h-6 w-6 text-gray-800 dark:text-gray-200" />
+							<Link href={technology.acf.url} target="_blank" rel="noreferrer" className="w-fit mx-auto flex flex-col gap-1 items-center justify-center mt-5">
 								<p className="text-lg text-primary">{technology.acf.url}</p>
 							</Link>
 						)}

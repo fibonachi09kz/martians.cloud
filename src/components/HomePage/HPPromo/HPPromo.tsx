@@ -3,6 +3,7 @@ import {ChevronRightIcon} from "@heroicons/react/20/solid";
 import HPGlobe from "@/components/HomePage/HPPromo/HPGlobe";
 import {Button, Checkbox, Input, Link} from "@nextui-org/react";
 import {MailIcon} from "@nextui-org/shared-icons";
+import HPPromoForm from "@/components/HomePage/HPPromo/HPPromoForm";
 
 const HPPromo = () => {
 	return (
@@ -29,36 +30,7 @@ const HPPromo = () => {
 								Наша компания специализируется на создании современных, быстрых, а главное - индивидуальных сайтов
 							</p>
 							<div className="mt-10 sm:mt-12">
-								<form action="#" className="sm:mx-auto sm:max-w-xl lg:mx-0">
-									<div className="sm:flex">
-										<div className="min-w-0 flex-1">
-											<Input
-												size="sm"
-												type="email"
-												placeholder="Введите свой email"
-												variant="bordered"
-												classNames={{
-													inputWrapper: 'border-1',
-													input: 'text-base'
-												}}
-											/>
-										</div>
-										<div className="mt-3 sm:mt-0 sm:ml-3">
-											<Button
-												size="lg"
-												radius="sm"
-												color="primary"
-												className="text-base font-medium"
-												type="button"
-											>
-												Заказать сайт
-											</Button>
-										</div>
-									</div>
-									<p className="mt-3 text-sm text-gray-600 dark:text-gray-300 sm:mt-4">
-										Оставьте свою почту, и мы отправим вам  <Link href="#" className="font-medium text-sm">бриф</Link> для заполнения, чтобы создать общее представление о вашем проекте
-									</p>
-								</form>
+								<HPPromoForm />
 							</div>
 						</div>
 					</div>

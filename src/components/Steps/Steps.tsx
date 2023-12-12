@@ -37,12 +37,12 @@ const Steps = ({ steps }: Props) => {
 					ScrollTrigger.create({
 						trigger: point,
 						onEnter: function (self) {
-							self.trigger?.querySelector('.num')?.classList.add('!bg-mainBlue');
-							self.trigger?.querySelector('.dot')?.classList.add('!border-mainBlue');
+							self.trigger?.querySelector('.num')?.classList.add('!bg-primary');
+							self.trigger?.querySelector('.dot')?.classList.add('!border-primary');
 						},
 						onEnterBack: function (self) {
-							self.trigger?.querySelector('.num')?.classList.remove('!bg-mainBlue');
-							self.trigger?.querySelector('.dot')?.classList.remove('!border-mainBlue');
+							self.trigger?.querySelector('.num')?.classList.remove('!bg-primary');
+							self.trigger?.querySelector('.dot')?.classList.remove('!border-primary');
 						},
 						start: '20px center',
 						end: "20px center",
@@ -70,8 +70,8 @@ const Steps = ({ steps }: Props) => {
 				<div className="relative mt-12" ref={wrapper}>
 					<div className="hidden md:block absolute h-full left-1/2 -translate-x-1/2 top-0">
 						<hr className="h-full w-0.5 p-0 border border-dashed border-gray-500" />
-						<span className="absolute w-0.5 -translate-x-1/2 top-0 bg-mainBlue" ref={flyLine}>
-							<span className="absolute -translate-x-1/2 left-1/2 bottom-0 w-3 h-3 border-2 border-mainBlue rounded-full bg-white dark:bg-black block"></span>
+						<span className="absolute w-0.5 -translate-x-1/2 top-0 bg-primary" ref={flyLine}>
+							<span className="absolute -translate-x-1/2 left-1/2 bottom-0 w-3 h-3 border-2 border-primary rounded-full bg-white dark:bg-black block"></span>
 						</span>
 					</div>
 					{steps.map(( {id, title, text}, index ) => {

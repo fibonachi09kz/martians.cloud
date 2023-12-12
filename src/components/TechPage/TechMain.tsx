@@ -3,6 +3,7 @@ import TechSingle from "@/components/TechPage/TechSingle";
 import {TechnologyInterface} from "@/types/Technology";
 import {useState} from "react";
 import TechModal from "@/components/TechPage/TechModal";
+import techSingle from "@/components/TechPage/TechSingle";
 
 type Props = {
 	technologies: TechnologyInterface[];
@@ -36,7 +37,7 @@ const TechMain = ({ technologies, categories }: Props) => {
 						<div key={type.id}>
 							<h3 className="text-3xl text-center text-gray-600 mb-5 dark:text-white">{type.name}</h3>
 							<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-8 gap-5">
-								{technologies.filter((tech: TechnologyInterface) => tech.acf.type.name === type.name).map((technology: TechnologyInterface) => (
+								{technologies.sort(( a, b ) => Number(a.acf['sort-order']) - Number(b.acf['sort-order']) ).filter((tech: TechnologyInterface) => tech.acf.type.name === type.name).map((technology: TechnologyInterface) => (
 									<TechSingle key={technology.id} technology={technology} onClick={handleCardClick}  />
 								))}
 							</div>
