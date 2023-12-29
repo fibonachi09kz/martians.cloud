@@ -1,37 +1,11 @@
-import danila from '@/components/AboutPage/AboutTeam/media/team/danila.webp';
-import mariya from '@/components/AboutPage/AboutTeam/media/team/mariya.webp';
-import vadim from '@/components/AboutPage/AboutTeam/media/team/vadim.webp';
-import andrey from '@/components/AboutPage/AboutTeam/media/team/andrey.webp';
+'use client'
 import Image from "next/image";
+import { TeamMemberInterface } from "@/types/TeamMembers";
 
-const people = [
-    {
-        id: 1,
-        name: 'Alexin Danila',
-        role: 'Founder of "Martians"',
-        imageUrl: danila
-    },
-    {
-        id: 2,
-        name: 'Kalitin Andrey',
-        role: 'Co-Founder of "Martians"',
-        imageUrl: andrey
-    },
-    {
-        id: 3,
-        name: 'Nikulshina Mariya',
-        role: 'Commercial Director',
-        imageUrl: mariya
-    },
-    {
-        id: 4,
-        name: 'Popchenya Vadim',
-        role: 'Frontend Developer',
-        imageUrl: vadim
-    },
-]
-
-const AboutTeam = () => {
+type Props = {
+    teamMembers: TeamMemberInterface[];
+}
+const AboutTeam = ({ teamMembers }: Props) => {
     return (
         <div className="bg-white dark:bg-black">
             <div className="mx-auto max-w-7xl py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
@@ -46,14 +20,20 @@ const AboutTeam = () => {
                         role="list"
                         className="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-4"
                     >
-                        {people.map((person) => (
+                        {teamMembers.sort((a, b) => Number(a.acf["sort-position"]) - Number(b.acf["sort-position"]) ).map((person: TeamMemberInterface) => (
                             <li key={person.id}>
                                 <div className="space-y-4">
-                                    <Image src={person.imageUrl} alt="Person image" className="mx-auto h-32 w-32 rounded-full" />
+                                    <Image
+                                        src={person.acf["member-avatar"].sizes.medium}
+                                        alt={person.acf["member-avatar"].alt}
+                                        className="mx-auto h-32 w-32 rounded-full"
+                                        width={person.acf["member-avatar"].width}
+                                        height={person.acf["member-avatar"].height}
+                                    />
                                     <div className="space-y-2">
                                         <div className="text-xs font-medium lg:text-sm">
-                                            <h3>{person.name}</h3>
-                                            <p className="text-primary">{person.role}</p>
+                                            <h3>{person.title.rendered}</h3>
+                                            <p className="text-primary">{person.acf.position}</p>
                                         </div>
                                     </div>
                                 </div>

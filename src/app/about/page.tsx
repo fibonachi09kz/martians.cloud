@@ -3,6 +3,7 @@ import AboutPromo from "@/components/AboutPage/AboutPromo/AboutPromo";
 import { Metadata } from 'next'
 import AboutTeam from "@/components/AboutPage/AboutTeam/AboutTeam";
 import AboutHistory from "@/components/AboutPage/AboutHistory/AboutHistory";
+import {API_ENDPOINTS} from "@/constants/API";
 
 export const metadata: Metadata = {
 	title: 'О нас | Web-студия Martians',
@@ -30,11 +31,22 @@ export const metadata: Metadata = {
 	},
 }
 
-const AboutPage = () => {
+async function getTeamMembers() {
+	const res = await fetch(`${API_ENDPOINTS.TEAM_MEMBERS_POINT}?acf&acf_format=standard&per_page=100`, { next: { revalidate: 1800 } });
+	if (!res.ok) {
+		// This will activate the closest `error.js` Error Boundary
+		throw new Error('Failed to fetch data')
+	}
+	return res.json()
+}
+
+
+const AboutPage = async () => {
+	const teamMembers = await getTeamMembers();
 	return (
 		<Layout>
 			<AboutPromo />
-			<AboutTeam />
+			<AboutTeam teamMembers={teamMembers} />
 			<AboutHistory />
 		</Layout>
 	)
