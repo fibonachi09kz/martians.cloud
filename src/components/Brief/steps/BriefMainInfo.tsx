@@ -154,7 +154,13 @@ const BriefMainInfo = ({ handleSetBriefData, setNextStep, setPrevStep, currentSt
 				<div className="flex justify-between gap-5 items-center">
 					{currentStep >= 2 ?
 						(
-							<Button color="default" radius="sm" className="text-base font-medium" onClick={setPrevStep}>
+							<Button
+								color="default"
+								radius="sm"
+								variant="bordered"
+								className="text-base font-medium border-1"
+								onClick={setPrevStep}
+							>
 								Назад
 							</Button>
 						)

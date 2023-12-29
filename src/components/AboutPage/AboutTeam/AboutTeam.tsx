@@ -26,7 +26,7 @@ const AboutTeam = ({ teamMembers }: Props) => {
                                     <Image
                                         src={person.acf["member-avatar"].sizes.medium}
                                         alt={person.acf["member-avatar"].alt}
-                                        className="mx-auto h-32 w-32 rounded-full"
+                                        className="mx-auto h-32 w-32 rounded-full object-cover"
                                         width={person.acf["member-avatar"].width}
                                         height={person.acf["member-avatar"].height}
                                     />

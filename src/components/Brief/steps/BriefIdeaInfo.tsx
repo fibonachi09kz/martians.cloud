@@ -21,8 +21,8 @@ export const CustomRadio = (props: any) => {
 			{...otherProps}
 			classNames={{
 				base: cn(
-					"inline-flex m-0 bg-content1 hover:bg-gray-50 items-center justify-between",
-					"flex-row-reverse max-w-[400px] cursor-pointer rounded-lg gap-4 p-2 border border-gray-200",
+					"flex m-0 bg-content1 hover:bg-gray-50 items-center justify-between",
+					"flex-row-reverse w-full max-w-none sm:max-w-[400px] cursor-pointer rounded-lg gap-4 p-2 border border-gray-200",
 					"data-[selected=true]:border-primary data-[selected=true]:bg-primary/5"
 				),
 				description: "font-light"
@@ -88,7 +88,7 @@ const BriefIdeaInfo = ({ handleSetBriefData, setNextStep, setPrevStep, currentSt
 									value={formik.values['project-name']}
 									isInvalid={!!formik.touched['project-name'] && !!formik.errors['project-name']}
 									classNames={{
-										inputWrapper: 'border-1 max-w-sm h-[40px]',
+										inputWrapper: 'border-1 sm:max-w-sm h-[40px]',
 										input: 'text-base placeholder:text-slate-400 placeholder:font-light',
 									}}
 								/>
@@ -99,7 +99,7 @@ const BriefIdeaInfo = ({ handleSetBriefData, setNextStep, setPrevStep, currentSt
 							<dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
 								<RadioGroup
 									classNames={{
-										wrapper: "grid grid-cols-2 gap-4"
+										wrapper: "grid md:grid-cols-2 gap-4"
 									}}
 									name="project-type"
 									onChange={formik.handleChange}
@@ -132,7 +132,13 @@ const BriefIdeaInfo = ({ handleSetBriefData, setNextStep, setPrevStep, currentSt
 				<div className="flex justify-between gap-5 items-center">
 					{currentStep >= 2 ?
 						(
-							<Button color="default" radius="sm" className="text-base font-medium" onClick={setPrevStep}>
+							<Button
+								color="default"
+								radius="sm"
+								variant="bordered"
+								className="text-base font-medium border-1"
+								onClick={setPrevStep}
+							>
 								Назад
 							</Button>
 						)
