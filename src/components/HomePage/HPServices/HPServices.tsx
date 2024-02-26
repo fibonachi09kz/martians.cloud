@@ -20,16 +20,16 @@ const HPServices = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-8 px-5 pb-16 sm:mt-12 mx-auto max-w-7xl sm:pb-20 lg:pb-28 grid grid-cols-6 gap-5">
+            <div className="mt-8 px-5 pb-16 sm:mt-12 mx-auto max-w-7xl sm:pb-20 lg:pb-28 grid grid-cols-2 md:grid-cols-6 gap-5">
                 <Button
                     // as={Link}
                     // href="/123"
-                    className="p-0 m-0 h-auto rounded-2xl col-span-2"
+                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[450px] w-full">
+                    <Card className="h-[380px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
                             <p className="text-tiny text-white/60 uppercase font-bold">Web Dev</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-2xl whitespace-break-spaces">Разработка сайтов</h4>
+                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Разработка сайтов</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
@@ -42,12 +42,12 @@ const HPServices = () => {
                 <Button
                     // as={Link}
                     // href="/123"
-                    className="p-0 m-0 h-auto rounded-2xl col-span-2"
+                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[450px] w-full">
+                    <Card className="h-[380px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">Design</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-2xl whitespace-break-spaces">Индивидуальный дизайн</h4>
+                            <p className="text-tiny text-white/60 uppercase font-bold">Mobile Dev</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Разработка мобильных приложений</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
@@ -60,56 +60,75 @@ const HPServices = () => {
                 <Button
                     // as={Link}
                     // href="/123"
-                    className="p-0 m-0 h-auto rounded-2xl col-span-2"
+                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[450px] w-full">
-                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">Mobile Dev</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-2xl whitespace-break-spaces">Разработка мобильных приложений</h4>
-                        </CardHeader>
-                        <Image
-                            removeWrapper
-                            alt="Card background"
-                            className="z-0 w-full h-full object-cover"
-                            src="/images/1.png"
-                        />
-                    </Card>
-                </Button>
-
-                <Button
-                    // as={Link}
-                    // href="/123"
-                    className="p-0 m-0 h-auto rounded-2xl col-span-3"
-                >
-                    <Card className="h-[300px] w-full">
-                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">PPC Advertising</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-2xl whitespace-break-spaces">Контекстная реклама</h4>
-                        </CardHeader>
-                        <Image
-                            removeWrapper
-                            alt="Card background"
-                            className="z-0 w-full h-full object-cover"
-                            src="/images/1.png"
-                        />
-                    </Card>
-                </Button>
-
-                <Button
-                    // as={Link}
-                    // href="/123"
-                    className="p-0 m-0 h-auto rounded-2xl col-span-3"
-                >
-                    <Card className="h-[300px] w-full">
+                    <Card className="h-[380px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
                             <p className="text-tiny text-white/60 uppercase font-bold">Neural Networks</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-2xl whitespace-break-spaces">Интеграция нейросетей</h4>
+                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Интеграция нейросетей</h4>
+                        </CardHeader>
+                        <Image
+                            removeWrapper
+                            alt="Card background"
+                            className="z-0 w-full h-full object-cover"
+                            src="/images/3.jpg"
+                        />
+                    </Card>
+                </Button>
+
+                <Button
+                    // as={Link}
+                    // href="/123"
+                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
+                >
+                    <Card className="h-[380px] sm:h-[450px] w-full">
+                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
+                            <p className="text-tiny text-white/60 uppercase font-bold">PPC Advertising</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Контекстная реклама</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
                             alt="Card background"
                             className="z-0 w-full h-full object-cover"
                             src="/images/1.png"
+                        />
+                    </Card>
+                </Button>
+
+                <Button
+                    // as={Link}
+                    // href="/123"
+                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
+                >
+                    <Card className="h-[380px] sm:h-[450px] w-full">
+                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
+                            <p className="text-tiny text-white/60 uppercase font-bold">Design</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Индивидуальный дизайн</h4>
+                        </CardHeader>
+                        <Image
+                            removeWrapper
+                            alt="Card background"
+                            className="z-0 w-full h-full object-cover"
+                            src="/images/2.png"
+                        />
+                    </Card>
+                </Button>
+
+                <Button
+                    // as={Link}
+                    // href="/123"
+                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
+                >
+                    <Card className="h-[380px] sm:h-[450px] w-full">
+                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
+                            <p className="text-tiny text-white/60 uppercase font-bold">Support</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Поддержка сайтов</h4>
+                        </CardHeader>
+                        <Image
+                            removeWrapper
+                            alt="Card background"
+                            className="z-0 w-full h-full object-cover"
+                            src="/images/2.png"
                         />
                     </Card>
                 </Button>
