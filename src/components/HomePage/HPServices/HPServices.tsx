@@ -26,10 +26,10 @@ const HPServices = () => {
                     // href="/123"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[380px] sm:h-[450px] w-full">
+                    <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
                             <p className="text-tiny text-white/60 uppercase font-bold">Web Dev</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Разработка сайтов</h4>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Разработка сайтов</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
@@ -44,10 +44,10 @@ const HPServices = () => {
                     // href="/123"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[380px] sm:h-[450px] w-full">
+                    <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
                             <p className="text-tiny text-white/60 uppercase font-bold">Mobile Dev</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Разработка мобильных приложений</h4>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Разработка мобильных приложений</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
@@ -62,10 +62,10 @@ const HPServices = () => {
                     // href="/123"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[380px] sm:h-[450px] w-full">
+                    <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
                             <p className="text-tiny text-white/60 uppercase font-bold">Neural Networks</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Интеграция нейросетей</h4>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Интеграция нейросетей</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
@@ -81,10 +81,10 @@ const HPServices = () => {
                     // href="/123"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[380px] sm:h-[450px] w-full">
+                    <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
                             <p className="text-tiny text-white/60 uppercase font-bold">PPC Advertising</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Контекстная реклама</h4>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Контекстная реклама</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
@@ -100,10 +100,10 @@ const HPServices = () => {
                     // href="/123"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[380px] sm:h-[450px] w-full">
+                    <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
                             <p className="text-tiny text-white/60 uppercase font-bold">Design</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Индивидуальный дизайн</h4>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Индивидуальный дизайн</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
@@ -119,10 +119,10 @@ const HPServices = () => {
                     // href="/123"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
-                    <Card className="h-[380px] sm:h-[450px] w-full">
+                    <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
                             <p className="text-tiny text-white/60 uppercase font-bold">Support</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-xl sm:text-2xl whitespace-break-spaces">Поддержка сайтов</h4>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Поддержка сайтов</h4>
                         </CardHeader>
                         <Image
                             removeWrapper
