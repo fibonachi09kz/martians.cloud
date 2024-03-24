@@ -1,31 +1,23 @@
 import Logo from "@/components/Logo/Logo";
 import Link from "next/link";
+import {Time} from "@internationalized/date";
 
 
 const navigation = {
-	solutions: [
-		{ name: 'Заказать сайт', href: '#' },
-		{ name: 'Тарифы', href: '#' },
-		{ name: 'Дополнительные услуги', href: '#' },
-		{ name: 'Преимущества', href: '#' },
+	main: [
+		{ name: 'Услуги', href: '/services' },
+		{ name: 'Проекты', href: '/projects' },
+		{ name: 'Технологии', href: '/technologies' },
+		{ name: 'О нас', href: '/about' },
+		{ name: 'Контакты', href: '/contacts' },
 	],
-	support: [
-		{ name: 'Pricing', href: '#' },
-		{ name: 'Documentation', href: '#' },
-		{ name: 'Guides', href: '#' },
-		{ name: 'API Status', href: '#' },
-	],
-	company: [
-		{ name: 'About', href: '#' },
-		{ name: 'Blog', href: '#' },
-		{ name: 'Jobs', href: '#' },
-		{ name: 'Press', href: '#' },
-		{ name: 'Partners', href: '#' },
-	],
-	legal: [
-		{ name: 'Claim', href: '#' },
-		{ name: 'Privacy', href: '#' },
-		{ name: 'Terms', href: '#' },
+	services: [
+		{ name: 'Разработка сайтов', href: '#' },
+		{ name: 'Разработка мобильных приложений', href: '#' },
+		{ name: 'Интеграция нейросетей', href: '#' },
+		{ name: 'Контекстная реклама', href: '#' },
+		{ name: 'Индивидуальный дизайн', href: '#' },
+		{ name: 'Поддержка сайтов', href: '#' },
 	],
 	social: [
 		{
@@ -93,92 +85,41 @@ const navigation = {
 }
 const Footer = () => {
 	return (
-		<footer className="relative bg-white dark:bg-black border-t border-gray-300 dark:border-white/20" aria-labelledby="footer-heading">
-			<h2 id="footer-heading" className="sr-only">
-				Martians.kz
-			</h2>
-			<div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
-					<div className="space-y-6 xl:col-span-1">
-						<Logo withTitle={true} isDark={false} />
-						<div className="text-sm font-medium text-green-500 flex items-center gap-2">
-							<span className="text-gray-500 dark:text-gray-400">Статус:</span>
-							<span className="w-2 h-2 flex-shrink-0 rounded-full bg-green-500"></span>
-							<span>Все системы online</span>
-						</div>
-						<p className="text-base text-gray-500 dark:text-gray-400 max-w-xs">
-							Профессиональная разработка многоцелевых сайтов
-						</p>
-						<div className="flex space-x-6">
-							{navigation.social.map((item) => (
-								<a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-									<span className="sr-only">{item.name}</span>
-									<item.icon className="h-6 w-6" aria-hidden="true" />
-								</a>
-							))}
-						</div>
-						<Link href="/" className="block text-gray-500 dark:text-gray-400">
-							Политика конфиденциальности
-						</Link>
-					</div>
-					<div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-						<div className="md:grid md:grid-cols-2 md:gap-8">
-							<div>
-								<h3 className="text-base font-bold text-black dark:text-white">Главная</h3>
-								<ul role="list" className="mt-4 space-y-4">
-									{navigation.solutions.map((item) => (
-										<li key={item.name}>
-											<a href={item.href} className="text-base text-gray-600 dark:text-gray-400">
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-bold text-black dark:text-white">Support</h3>
-								<ul role="list" className="mt-4 space-y-4">
-									{navigation.support.map((item) => (
-										<li key={item.name}>
-											<a href={item.href} className="text-base text-gray-600 dark:text-gray-400">
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-						</div>
-						<div className="md:grid md:grid-cols-2 md:gap-8">
-							<div>
-								<h3 className="text-base font-bold text-black dark:text-white">Company</h3>
-								<ul role="list" className="mt-4 space-y-4">
-									{navigation.company.map((item) => (
-										<li key={item.name}>
-											<a href={item.href} className="text-base text-gray-600 dark:text-gray-400">
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-							<div className="mt-12 md:mt-0">
-								<h3 className="text-base font-bold text-black dark:text-white">Legal</h3>
-								<ul role="list" className="mt-4 space-y-4">
-									{navigation.legal.map((item) => (
-										<li key={item.name}>
-											<a href={item.href} className="text-base text-gray-600 dark:text-gray-400">
-												{item.name}
-											</a>
-										</li>
-									))}
-								</ul>
-							</div>
-						</div>
-					</div>
+		<footer className="flex w-full flex-col border-t border-gray-200 dark:border-white/20">
+			<div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-6 py-8 pb-12 lg:px-8">
+				<div className="flex items-center justify-center mb-5">
+					<Logo withTitle={true} isDark={false} />
 				</div>
-				<div className="mt-12 border-t border-gray-300 dark:border-white/20 pt-8">
-					<p className="text-base text-gray-600 dark:text-gray-400 xl:text-center">&copy; 2023 ИП Martians, ИИН 001014551125. Казахстан, г. Караганда. Все права защищены.</p>
+				<span aria-hidden="true" className="w-px h-px block"></span>
+				<div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mb-3">
+					{navigation.main.map((item) => (
+						<a
+							className="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-base no-underline hover:text-primary active:opacity-disabled transition-opacity text-default-500"
+							role="link"
+							href="#"
+							rel="noopener noreferrer"
+							target="_blank"
+							key={item.name}
+						>
+							{item.name}
+						</a>
+					))}
 				</div>
+				<div className="flex justify-center gap-x-4 mb-2">
+					<a
+						className="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-default-400"
+						role="link"
+						href="#"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<span className="sr-only">YouTube</span>
+						<svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+						</svg>
+					</a>
+				</div>
+				<p className="mt-1 text-center text-base text-default-400">© {new Date().getFullYear()} ИП Martians, ИИН 001014551125. Казахстан, г. Караганда. Все права защищены.</p>
 			</div>
 		</footer>
 	)
