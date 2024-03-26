@@ -4,9 +4,9 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'fibonachi.kz',
+				hostname: '*',
 				port: '',
-				pathname: '/wp-content/uploads/**',
+				pathname: '/**',
 			},
 		],
 	},

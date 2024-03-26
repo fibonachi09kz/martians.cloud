@@ -8,41 +8,6 @@ import Spline from '@splinetool/react-spline';
 
 const HPPromo = () => {
 	return (
-		// <div className="bg-white dark:bg-black pt-10 sm:pt-16 overflow-hidden lg:pt-8 lg:pb-14">
-		// 	<div className="mx-auto max-w-7xl lg:px-8">
-		// 		<div className="lg:grid lg:grid-cols-2 lg:gap-8">
-		// 			<div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">
-		// 				<div className="lg:py-24">
-		// 					<Link
-		// 						href="/about"
-		// 						className="inline-flex items-center border border-gray-300 dark:border-gray-800 rounded-full p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base"
-		// 					>
-		// 						<span className="rounded-full bg-primary px-3 py-0.5 text-sm font-semibold leading-5 text-white">
-		// 						  	Martians.cloud
-		// 						</span>
-		// 						<span className="ml-4 text-sm text-black dark:text-white">Подробнее о компании</span>
-		// 						<ChevronRightIcon className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
-		// 					</Link>
-		// 					<h1 className="mt-4 text-4xl font-bold tracking-tight text-black dark:text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-5xl">
-		// 						<span className="block">Разработка IT решений</span>
-		// 						<span className="block text-primary">по всему миру</span>
-		// 					</h1>
-		// 					<p className="mt-3 text-base text-gray-600 dark:text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-		// 						Наша компания специализируется на создании IT решений с использованием лучших практик и современных технологий
-		// 					</p>
-		// 					<div className="mt-10 sm:mt-12">
-		// 						<HPPromoForm />
-		// 					</div>
-		// 				</div>
-		// 			</div>
-		// 			<div className="mt-12 mb-0 lg:relative lg:m-0">
-		// 				<div className="max-w-full h-[300px] overflow-hidden relative border-b border-gray-300 dark:border-white/20 sm:border-0 sm:h-full mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 ml-[140px]">
-		// 					<Spline scene="https://prod.spline.design/oDAyYJjXI0-mEoDf/scene.splinecode" />
-		// 				</div>
-		// 			</div>
-		// 		</div>
-		// 	</div>
-		// </div>
 		<section className="bg-white dark:bg-gray-900">
 			<div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 				<a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-12 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">

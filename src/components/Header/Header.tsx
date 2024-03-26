@@ -46,7 +46,7 @@ const Header = () => {
 						})}
 					</div>
 					<div className="hidden xl:flex xl:flex-1 xl:justify-end">
-						<Button color="primary" radius="sm" className="text-base font-medium">
+						<Button color="primary" radius="md" className="text-base font-medium">
 							<RocketLaunchIcon className="h-5 w-5 text-white transition-all" aria-hidden="true"  />
 							Заказать
 						</Button>
@@ -78,7 +78,7 @@ const Header = () => {
 											<Link
 												key={item.name}
 												href={item.href}
-												className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-800/60 ${isActive ? 'text-mainBlue' : 'text-gray-900 dark:text-white'}`}
+												className={`-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 hover:bg-gray-200 dark:hover:bg-gray-800/60 ${isActive ? 'text-primary' : 'text-gray-900 dark:text-white'}`}
 											>
 												{item.name}
 											</Link>
