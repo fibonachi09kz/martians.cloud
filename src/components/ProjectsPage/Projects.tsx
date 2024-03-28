@@ -28,7 +28,7 @@ const Projects = () => {
 				<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 					<div className="text-center">
 						<h1 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl lg:text-5xl">Наши проекты</h1>
-						<p className="mt-4 text-xl text-gray-600 dark:text-gray-400">Просмотрите наши вдохновляющие веб-проекты</p>
+						<p className="mt-4 text-xl text-gray-600 dark:text-gray-400">Просмотрите наши вдохновляющие проекты</p>
 					</div>
 				</div>
 				<div className="mt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

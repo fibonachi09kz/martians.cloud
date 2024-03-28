@@ -1,14 +1,9 @@
 'use client'
-import {ChevronRightIcon} from "@heroicons/react/20/solid";
-import HPGlobe from "@/components/HomePage/HPPromo/HPGlobe";
 import {Button, Checkbox, Input, Link} from "@nextui-org/react";
-import {MailIcon} from "@nextui-org/shared-icons";
-import HPPromoForm from "@/components/HomePage/HPPromo/HPPromoForm";
-import Spline from '@splinetool/react-spline';
 
 const HPPromo = () => {
 	return (
-		<section className="bg-white dark:bg-gray-900">
+		<section className="bg-white dark:bg-black">
 			<div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 				<a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-12 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
 					<span className="text-sm bg-primary rounded-full text-white px-4 py-1 mr-3">Martians.cloud</span>
@@ -33,7 +28,7 @@ const HPPromo = () => {
 						Наши услуги
 					</Button>
 					<Button
-						href="/services"
+						href="/technologies"
 						as={Link}
 						color="primary"
 						variant="flat"

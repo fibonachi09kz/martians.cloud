@@ -14,7 +14,7 @@ const AboutPromo = () => {
 						Наша команда и история
 					</h1>
 					<p className="mx-auto mt-6 max-w-md text-lg text-gray-800 dark:text-white sm:text-lg md:mt-8 md:max-w-3xl md:text-2xl">
-						Мы - команда экспертов в веб-разработке, с фокусом на создание потрясающих и инновационных веб-решений
+						Мы - команда экспертов в IT сфере, с фокусом на создание потрясающих и инновационных решений
 					</p>
 					<div className="mx-auto mt-8 flex-col sm:flex-row flex justify-center gap-3 sm:gap-5 md:mt-12">
 						<Button

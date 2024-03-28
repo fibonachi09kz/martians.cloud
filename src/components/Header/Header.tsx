@@ -35,7 +35,7 @@ const Header = () => {
 							<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 						</button>
 					</div>
-					<div className="hidden xl:flex lg:gap-x-12">
+					<div className="hidden xl:flex lg:gap-x-6">
 						{navigation.map((item: NavigationItem) => {
 							const isActive = pathname === item.href
 							return (
