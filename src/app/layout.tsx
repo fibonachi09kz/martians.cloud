@@ -13,7 +13,7 @@ const inter = Inter({
 
 
 export const metadata = {
-	metadataBase: new URL('https://martians.kz'),
+	metadataBase: new URL('https://martians.cloud'),
 	title: 'Главная | Web-студия Martians',
 	description: 'Web-студия разработки сайтов',
 }

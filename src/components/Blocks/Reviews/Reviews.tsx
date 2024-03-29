@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import Image from "next/image";
 const Reviews = () => {
+
 	return (
 		<div className="bg-white dark:bg-black py-12 lg:py-24">
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -20,7 +21,7 @@ const Reviews = () => {
 					loop={true}
 					freeMode={true}
 					allowTouchMove={false}
-					autoplay={{ delay: 0, disableOnInteraction: true }}
+					autoplay={{ delay: 0, disableOnInteraction: true, pauseOnMouseEnter: true }}
 					slidesPerView="auto"
 				>
 					<SwiperSlide
