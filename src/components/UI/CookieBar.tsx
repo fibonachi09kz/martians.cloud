@@ -23,7 +23,7 @@ const CookieBar = () => {
 	}
 
 	return (
-		<div className="fixed bottom-0 w-full left-0 z-20 bg-black dark:bg-zinc-900 py-5 sm:py-3">
+		<div className="fixed bottom-0 w-full left-0 z-[100] bg-black dark:bg-zinc-900 py-5 sm:py-3 dark:border-t dark:border-zinc-800">
 			<div className="max-w-7xl mx-auto px-5 flex flex-col sm:flex-row items-center gap-5 justify-center sm:pr-[60px] xl:pr-5">
 				<p className="text-base text-white pr-10 sm:p-0">Мы собираем данные для аналитики, используя ваши Cookie. Примите согласие с этим, либо покиньте сайт</p>
 				<Button
