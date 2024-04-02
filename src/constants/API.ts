@@ -7,5 +7,4 @@ export const API_ENDPOINTS = {
 	TECHNOLOGIES_CATEGORIES_POINT: `${PROTOCOL}://${HOST}${API_POINT}/tech-type`,
 	TEAM_MEMBERS_POINT: `${PROTOCOL}://${HOST}${API_POINT}/team-members`,
 	ARTICLES: `${PROTOCOL}://${HOST}${API_POINT}/articles`,
-	SINGLE_ARTICLE: `${PROTOCOL}://${HOST}${API_POINT}/articles/`
 }

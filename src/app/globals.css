@@ -188,3 +188,27 @@
 	display: flex;
 	flex: 1;
 }
+
+
+
+.blog-content p {
+	@apply mb-5
+}
+.blog-content figure {
+	@apply w-full mb-5
+}
+.blog-content figure img {
+	@apply w-full max-w-[500px] mx-auto
+}
+.blog-content h2 {
+	@apply text-3xl mb-5 font-bold
+}
+.blog-content h3 {
+	@apply text-2xl mb-5 font-medium
+}
+.blog-content ul {
+	@apply list-disc mb-5 list-inside
+}
+.blog-content ol {
+	@apply list-decimal mb-5 list-inside
+}

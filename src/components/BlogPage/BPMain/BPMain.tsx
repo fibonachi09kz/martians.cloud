@@ -1,8 +1,6 @@
 'use client';
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@nextui-org/react";
 import BPMainSingle from "@/components/BlogPage/BPMain/BPMainSingle";
+import {ArticleInterface} from "@/types/ArticlesTypes";
 
 type Props = {
 	articles: any
@@ -22,8 +20,8 @@ const BPMain = ({ articles }: Props) => {
 				</div>
 
 				<div className="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-					{articles.length ? articles.map(article => (
-						<BPMainSingle article={article} />
+					{articles.length ? articles.map((article: ArticleInterface) => (
+						<BPMainSingle key={article.id} article={article} />
 					)) : (
 						<p>У нас пока нет статей. Зайдите позднее.</p>
 					)}

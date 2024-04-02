@@ -1,15 +1,17 @@
 import Image from "next/image";
 import {Button} from "@nextui-org/react";
 import Link from "next/link";
+import {ArticleInterface} from "@/types/ArticlesTypes";
 
 
 type Props = {
-	article: any
+	article: ArticleInterface
 }
 
 const BPMainSingle = ({ article }: Props) => {
 	return (
-		<Link href={`/blog/${article.slug}`} className="group flex flex-col transition-all overflow-hidden rounded-xl shadow-md active:shadow-xl hover:shadow-xl dark:bg-zinc-900">
+		<Link href={`/blog/${article.slug}`}
+			  className="group flex flex-col transition-all overflow-hidden rounded-xl shadow-md active:shadow-xl hover:shadow-xl dark:bg-zinc-900">
 			<div className="flex items-center justify-center p-4">
 				<Image src={article.acf.mainpic.url} className="w-full aspect-[715/384] rounded-md overflow-hidden" width={715} height={384} alt={article.acf.mainpic.alt} />
 			</div>
