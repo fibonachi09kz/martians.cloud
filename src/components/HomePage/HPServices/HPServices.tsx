@@ -90,7 +90,7 @@ const HPServices = () => {
                             removeWrapper
                             alt="Card background"
                             className="z-0 w-full h-full object-cover"
-                            src="/images/1.png"
+                            src="/images/adv.jpg"
                         />
                     </Card>
                 </Button>
