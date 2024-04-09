@@ -17,9 +17,13 @@ const MobileMain = () => {
 
 				<MobileCrossPlatform />
 				{/*<MobileDevList />*/}
+				{/*<div className="mt-24">*/}
+				{/*	<MobileDevSteps />*/}
+				{/*</div>*/}
 				<div className="mt-24">
-					<MobileDevSteps />
+					<MobileDevList />
 				</div>
+
 
 			</div>
 		</section>
