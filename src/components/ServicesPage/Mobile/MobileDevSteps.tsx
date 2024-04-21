@@ -22,21 +22,26 @@ const MobileDevSteps = () => {
 						as={Link}
 						color="primary"
 						size="md"
+						variant="flat"
 						className="text-base font-medium"
 					>
 						Подробнее о React Native
 					</Button>
 				</div>
 			</div>
-			<div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+			<div
+				className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
 				<div className="mt-4 md:mt-0">
 					<h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Гибкость</h2>
-					<p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Если вам нужно добавить функционал только на одну из платформ, мы с легкостью адаптируем код, чтобы соответствовать вашим потребностям, не затрагивая другую платформу</p>
+					<p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Если вам нужно добавить
+						функционал только на одну из платформ, мы с легкостью адаптируем код, чтобы соответствовать
+						вашим потребностям, не затрагивая другую платформу</p>
 					<Button
 						href="/contacts"
 						as={Link}
 						color="primary"
 						size="md"
+						variant="flat"
 						className="text-base font-medium"
 					>
 						Заказать приложение
@@ -47,7 +52,24 @@ const MobileDevSteps = () => {
 					loop: true,
 					autoplay: true,
 					animationData: animationData,
-				}} isClickToPauseDisabled={true} />
+				}} isClickToPauseDisabled={true}/>
+			</div>
+			<div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+				<Image className="w-full" src={oneCodeBase} alt="dashboard image"/>
+				<div className="mt-4 md:mt-0">
+					<h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Универсальность</h2>
+					<p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Независимо от того, нужно вам разработать приложение для Android, iOS или обеих платформ, мы создадим решение, которое работает плавно и безупречно на всех устройствах</p>
+					<Button
+						href="/contacts"
+						as={Link}
+						color="primary"
+						size="md"
+						variant="flat"
+						className="text-base font-medium"
+					>
+						Заказать приложение
+					</Button>
+				</div>
 			</div>
 		</section>
 	)

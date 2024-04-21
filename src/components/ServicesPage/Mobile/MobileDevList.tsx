@@ -1,6 +1,7 @@
 import Image from "next/image";
 import dev1Img from './img/dev-1.svg';
 import dev2Img from './img/dev-2.svg';
+import dev3Img from './img/dev-3.svg';
 
 const MobileDevList = () => {
 	return (
@@ -20,7 +21,7 @@ const MobileDevList = () => {
 				<div className="bg-gray-100 dark:bg-zinc-900 rounded-xl px-4 py-6 flex flex-col">
 					<h3 className="text-center text-xl font-bold uppercase mb-3">Обновления</h3>
 					<p className="text-base text-center">Полный цикл разработки приложения, включая frontend, backend и тестирование, обеспечивая клиентам высококачественные и инновационные решения для iOS и Android.</p>
-					<Image src={dev2Img} className="w-full -mb-5 dark:invert mt-auto" alt="Обновления" />
+					<Image src={dev3Img} className="w-full -mb-5 dark:invert mt-auto" alt="Обновления" />
 				</div>
 			</div>
 		</div>

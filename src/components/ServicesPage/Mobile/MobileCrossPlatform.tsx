@@ -19,20 +19,20 @@ const MobileCrossPlatform = () => {
 			<div className="lg:col-span-3 rounded-xl overflow-hidden h-[200px] lg:h-[390px]">
 				<Image src={crossImg} className="w-full h-full object-cover" quality={100} width={1600} height={1200} alt="Mobile apps" />
 			</div>
-			<div className="lg:col-span-5 grid lg:grid-cols-3 gap-5">
-				<div className="bg-white dark:bg-zinc-900 rounded-xl p-4">
-					<h3 className="text-center text-xl font-bold mb-2">Экономия времени и денег</h3>
-					<p className="text-sm text-center">Наш подход к кроссплатформенной разработке позволяет сэкономить как время, так и ресурсы клиента, благодаря одной кодовой базе для обеих платформ</p>
-				</div>
-				<div className="bg-white dark:bg-zinc-900 rounded-xl p-4">
-					<h3 className="text-center text-xl font-bold mb-2">Гибкость</h3>
-					<p className="text-sm text-center">Если вам нужно добавить функционал только на одну из платформ, мы с легкостью адаптируем код, чтобы соответствовать вашим потребностям, не затрагивая другую платформу</p>
-				</div>
-				<div className="bg-white dark:bg-zinc-900 rounded-xl p-4">
-					<h3 className="text-center text-xl font-bold mb-2">Универсальность</h3>
-					<p className="text-sm text-center">Независимо от того, нужно вам разработать приложение для Android, iOS или обеих платформ, мы создадим решение, которое работает плавно и безупречно на всех устройствах</p>
-				</div>
-			</div>
+			{/*<div className="lg:col-span-5 grid lg:grid-cols-3 gap-5">*/}
+			{/*	<div className="bg-white dark:bg-zinc-900 rounded-xl p-4">*/}
+			{/*		<h3 className="text-center text-xl font-bold mb-2">Экономия времени и денег</h3>*/}
+			{/*		<p className="text-sm text-center">Наш подход к кроссплатформенной разработке позволяет сэкономить как время, так и ресурсы клиента, благодаря одной кодовой базе для обеих платформ</p>*/}
+			{/*	</div>*/}
+			{/*	<div className="bg-white dark:bg-zinc-900 rounded-xl p-4">*/}
+			{/*		<h3 className="text-center text-xl font-bold mb-2">Гибкость</h3>*/}
+			{/*		<p className="text-sm text-center">Если вам нужно добавить функционал только на одну из платформ, мы с легкостью адаптируем код, чтобы соответствовать вашим потребностям, не затрагивая другую платформу</p>*/}
+			{/*	</div>*/}
+			{/*	<div className="bg-white dark:bg-zinc-900 rounded-xl p-4">*/}
+			{/*		<h3 className="text-center text-xl font-bold mb-2">Универсальность</h3>*/}
+			{/*		<p className="text-sm text-center">Независимо от того, нужно вам разработать приложение для Android, iOS или обеих платформ, мы создадим решение, которое работает плавно и безупречно на всех устройствах</p>*/}
+			{/*	</div>*/}
+			{/*</div>*/}
 		</div>
 	)
 }

@@ -16,7 +16,6 @@ const MobileMain = () => {
 			<div className="px-5 max-w-7xl mx-auto">
 
 				<MobileCrossPlatform />
-				{/*<MobileDevList />*/}
 				<div className="mt-24">
 					<MobileDevSteps />
 				</div>
