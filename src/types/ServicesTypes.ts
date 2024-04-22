@@ -1,11 +1,12 @@
-import {IconifyIcon} from "@iconify/types";
 import {JSX} from "react";
+import {Service} from "@/types/Services";
 
 
 export interface ServiceInterface {
 	id: number;
-	name: string;
+	name: Service;
 	icon: () => JSX.Element;
+	listIcon: () => JSX.Element;
 	description: string;
 	detailLink: string;
 	mainColor: string;

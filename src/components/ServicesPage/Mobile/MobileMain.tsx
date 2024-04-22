@@ -1,6 +1,7 @@
 import MobileCrossPlatform from "@/components/ServicesPage/Mobile/MobileCrossPlatform";
 import MobileDevList from "@/components/ServicesPage/Mobile/MobileDevList";
 import MobileDevSteps from "@/components/ServicesPage/Mobile/MobileDevSteps";
+import FlexContactForm from "@/components/Widgets/ContactForm/FlexContactForm";
 
 const MobileMain = () => {
 	return (
@@ -22,7 +23,7 @@ const MobileMain = () => {
 				<div className="mt-24">
 					<MobileDevList />
 				</div>
-
+				<FlexContactForm service="Разработка мобильных приложений" />
 
 			</div>
 		</section>
