@@ -24,7 +24,7 @@ const MobileDevSteps = () => {
 						as={Link}
 						color="primary"
 						size="md"
-						variant="flat"
+						variant="solid"
 						className="text-base font-medium"
 					>
 						Подробнее о React Native
@@ -38,11 +38,11 @@ const MobileDevSteps = () => {
 						функционал только на одну из платформ, мы с легкостью адаптируем код, чтобы соответствовать
 						вашим потребностям, не затрагивая другую платформу</p>
 					<Button
-						href="/contacts"
+						href="#flex-contact-form"
 						as={Link}
 						color="primary"
 						size="md"
-						variant="flat"
+						variant="solid"
 						className="text-base font-medium"
 					>
 						Заказать приложение
@@ -64,11 +64,11 @@ const MobileDevSteps = () => {
 					<h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Универсальность</h2>
 					<p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Независимо от того, нужно вам разработать приложение для Android, iOS или обеих платформ, мы создадим решение, которое работает плавно и безупречно на всех устройствах</p>
 					<Button
-						href="/contacts"
+						href="#flex-contact-form"
 						as={Link}
 						color="primary"
 						size="md"
-						variant="flat"
+						variant="solid"
 						className="text-base font-medium"
 					>
 						Заказать приложение

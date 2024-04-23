@@ -17,6 +17,7 @@ import {services} from "@/data/services";
 import {useMaskito} from '@maskito/react';
 import options from '@/data/mask';
 import {contactTypeValues} from "@/data/contactTypes";
+import {Icon} from "@iconify/react";
 
 
 const socials = [
@@ -37,10 +38,11 @@ const socials = [
 ]
 
 interface IFlexContactFormProps {
-	service: Service
+	service?: Service;
+	contactType?: string;
 }
 
-const FlexContactForm = ({service}: IFlexContactFormProps) => {
+const FlexContactForm = ({service = 'Разработка сайтов', contactType = 'Написать в WhatsApp'}: IFlexContactFormProps) => {
 
 	const form = useRef<HTMLFormElement | null>(null);
 
@@ -55,9 +57,9 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 			name: '',
 			email: '',
 			phone: '',
-			message: '',
+			telegram: '',
 			service: service || '',
-			contactType: ''
+			contactType: contactType || ''
 		},
 		validationSchema: Yup.object({
 			name: Yup.string()
@@ -69,8 +71,7 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 			phone: Yup.string()
 				.min(15, 'Введите правильный номер телефона')
 				.required('Введите телефон'),
-			message: Yup.string()
-				.required('Введите сообщение'),
+			telegram: Yup.string(),
 			service: Yup.string()
 				.required('Выберите услугу'),
 			contactType: Yup.string()
@@ -78,27 +79,27 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 		}),
 		onSubmit: (values, { resetForm }) => {
 			if (form.current) {
-				// setSending(true);
+				setSending(true);
 				console.log(values)
-				// emailjs.sendForm('service_quusgcr', 'template_2n2rjn6', form.current, 'xcwo1QmAs0v-GIw8-')
-				// 	.then((result) => {
-				// 		setSending(false)
-				// 		setError(false)
-				// 		setSuccess(true)
-				// 		resetForm();
-				// 	}, (error) => {
-				// 		setSending(false)
-				// 		setError(true)
-				// 		setSuccess(false)
-				// 	});
+				emailjs.sendForm('service_quusgcr', 'template_2n2rjn6', form.current, 'xcwo1QmAs0v-GIw8-')
+					.then((result) => {
+						setSending(false)
+						setError(false)
+						setSuccess(true)
+						resetForm();
+					}, (error) => {
+						setSending(false)
+						setError(true)
+						setSuccess(false)
+					});
 			}
 		}
 	});
 
 
 	return (
-		<div className="relative bg-white dark:bg-black my-12 sm:my-24 sm:border rounded-md border-gray-300 dark:border-white/20 max-w-7xl mx-auto">
-			<div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
+		<div className="relative bg-white dark:bg-black my-12 sm:my-24 sm:border rounded-md border-gray-200 dark:border-white/20 max-w-7xl mx-auto" id="flex-contact-form">
+			<div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-6">
 				<div className="sm:py-12 px-0 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12 sm:border-r border-gray-300 dark:border-white/20">
 					<div className="mx-auto max-w-lg">
 						<h1 className="text-3xl font-bold text-black dark:text-white tracking-tight sm:text-4xl">Оставить заявку</h1>
@@ -126,14 +127,15 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 						</div>
 					</div>
 				</div>
-				<div className="py-12 sm:px-6 lg:col-span-3 lg:px-8 xl:pl-12">
+				<div className="py-12 sm:px-6 lg:col-span-4 lg:px-8 xl:pl-12">
 					<div className="mx-auto max-w-lg lg:max-w-none">
-						<form ref={form} onSubmit={formik.handleSubmit} className="grid grid-cols-1 gap-y-6" >
+						<form ref={form} onSubmit={formik.handleSubmit} className="grid lg:grid-cols-2 gap-6" >
 							<div>
 								<label htmlFor="name" className="sr-only">
 									Ваше имя
 								</label>
 								<Input
+									aria-labelledby="Ваше имя"
 									size="sm"
 									variant="bordered"
 									id="full-name"
@@ -158,6 +160,7 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 									Ваш Email
 								</label>
 								<Input
+									aria-labelledby="Ваш Email"
 									size="sm"
 									variant="bordered"
 									id="email"
@@ -182,6 +185,7 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 									Phone
 								</label>
 								<Input
+									aria-labelledby="Ваш телефон"
 									size="sm"
 									variant="bordered"
 									id="phone"
@@ -203,10 +207,37 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 								) : null}
 							</div>
 							<div>
+								<label htmlFor="telegram" className="sr-only">
+									Telegram
+								</label>
+								<Input
+									aria-labelledby="Ваш Telegram"
+									size="sm"
+									variant="bordered"
+									id="telegram"
+									name="telegram"
+									placeholder="Ваш Telegram"
+									type="text"
+									startContent={<Icon icon="ph:at" className="w-5 h-5 flex-none text-gray-700 dark:text-gray-50" />}
+									onChange={formik.handleChange}
+									onBlur={formik.handleBlur}
+									value={formik.values.telegram}
+									isInvalid={!!formik.touched.telegram && !!formik.errors.telegram}
+									classNames={{
+										inputWrapper: 'border-1',
+										input: 'text-base'
+									}}
+								/>
+								{formik.touched.telegram && formik.errors.telegram ? (
+									<div className="text-sm text-danger">{formik.errors.telegram}</div>
+								) : null}
+							</div>
+							<div>
 								<label htmlFor="service" className="sr-only">
 									Услуга
 								</label>
 								<Select
+									aria-labelledby="Выберите услугу"
 									size="sm"
 									variant="bordered"
 									placeholder="Выберите услугу"
@@ -242,18 +273,21 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 									Тип связи
 								</label>
 								<Select
+									aria-labelledby="Как с вами связаться"
 									size="sm"
 									variant="bordered"
 									placeholder="Как с вами связаться"
 									className=""
 									name="contactType"
+									selectionMode="single"
+									defaultSelectedKeys={[contactType]}
 									onChange={formik.handleChange}
 									onBlur={formik.handleBlur}
-									value={formik.values.contactType}
+									value={[formik.values.contactType]}
 									isInvalid={!!formik.touched.contactType && !!formik.errors.contactType}
 									classNames={{
 										trigger: 'border-1',
-										value: 'text-base',
+										value: 'text-base text-gray-900 dark:text-gray-50',
 										popoverContent: 'duration-150'
 									}}
 								>
@@ -267,44 +301,9 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 									<div className="text-sm text-danger">{formik.errors.contactType}</div>
 								) : null}
 							</div>
-							<div>
-								<label htmlFor="message" className="sr-only">
-									Message
-								</label>
-								<Textarea
-									size="sm"
-									variant="bordered"
-									placeholder="Введите ваше сообщение"
-									id="message"
-									name="message"
-									rows={4}
-									onChange={formik.handleChange}
-									onBlur={formik.handleBlur}
-									value={formik.values.message}
-									isInvalid={!!formik.touched.message && !!formik.errors.message}
-									classNames={{
-										inputWrapper: 'border-1',
-										input: 'text-base'
-									}}
-								/>
-								{formik.touched.message && formik.errors.message ? (
-									<div className="text-sm text-danger">{formik.errors.message}</div>
-								) : null}
-							</div>
+
 							<p className="mt-1 text-gray-600 dark:text-gray-400 text-sm">Отправляя данную форму, вы подтверждаете, что согласны с <Link href="" className="text-primary">политикой конфиденциальности</Link></p>
 							<div className="flex-col sm:flex-row gap-5 flex items-center justify-between">
-								{success && !sending ? (
-									<p className="flex gap-1 items-center text-green-600 dark:text-green-500 py-1 px-2 w-fit text-sm rounded-md bg-green-100 dark:bg-green-950 border border-green-600 dark:border-green-500">
-										<CheckCircleIcon className="h-5 w-5" />
-										Сообщение успешно отправлено
-									</p>
-								): null}
-								{error && !sending ? (
-									<p className="flex gap-1 items-center text-red-600 dark:text-red-500 py-1 px-2 w-fit text-sm rounded-md bg-red-100 dark:bg-red-950 border border-red-600 dark:border-red-500">
-										<ExclamationTriangleIcon className="h-5 w-5" />
-										Сообщение не отправлено, попробуйте позднее
-									</p>
-								): null}
 								<Button
 									color="primary"
 									type="submit"
@@ -314,6 +313,18 @@ const FlexContactForm = ({service}: IFlexContactFormProps) => {
 									Отправить
 								</Button>
 							</div>
+							{success && !sending ? (
+								<p className="flex gap-1 items-center text-green-600 dark:text-green-500 py-1 px-2 w-fit text-sm rounded-md bg-green-100 dark:bg-green-950 border border-green-600 dark:border-green-500">
+									<CheckCircleIcon className="h-5 w-5" />
+									Сообщение успешно отправлено
+								</p>
+							): null}
+							{error && !sending ? (
+								<p className="flex gap-1 items-center text-red-600 dark:text-red-500 py-1 px-2 w-fit text-sm rounded-md bg-red-100 dark:bg-red-950 border border-red-600 dark:border-red-500">
+									<ExclamationTriangleIcon className="h-5 w-5" />
+									Сообщение не отправлено, попробуйте позднее
+								</p>
+							): null}
 						</form>
 					</div>
 				</div>

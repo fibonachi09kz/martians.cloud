@@ -15,9 +15,9 @@ const HomePage = () => {
 			<HPPromo />
 			<HPServices />
 			{/*<HPTariffs />*/}
-			<div className="-mt-24">
-				<Widget />
-			</div>
+			{/*<div className="-mt-24">*/}
+			{/*	<Widget />*/}
+			{/*</div>*/}
 			<Stats />
 			<Features />
 			<HPCta />
