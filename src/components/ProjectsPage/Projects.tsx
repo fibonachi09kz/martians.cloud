@@ -1,117 +1,47 @@
 'use client'
 import Link from "next/link";
 import Image from "next/image";
-import {Fragment, useMemo, useState} from 'react'
-import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import {useState} from 'react'
 import {ArrowSmallRightIcon, GlobeAltIcon} from "@heroicons/react/24/outline";
 import logoSample from './media/logo-sample.svg';
-import {Dropdown, DropdownMenu, DropdownTrigger, Button, DropdownItem} from "@nextui-org/react";
+import {Tab, Tabs} from "@nextui-org/react";
 
-const categories = [
-	{ name: 'Все' },
-	{ name: 'Магазины' },
-	{ name: 'Ремонт' },
-	{ name: 'Автомобили' },
-	{ name: 'Развлекательные' },
-	{ name: 'Медицина' },
-	{ name: 'Спорт' },
-]
 const Projects = () => {
 
-	const [selectedKey, setSelectedKey] = useState(categories[0].name);
-
+	const [selectedCategory, setSelectedCategory] = useState<any>('sites');
 
 	return (
 		<section className="flex-1 bg-white dark:bg-black">
-			<div className="py-12 sm:py-16 lg:py-20">
+			<div className="py-12 sm:py-16 lg:py-20 relative">
 				<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 					<div className="text-center">
 						<h1 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl lg:text-5xl">Наши проекты</h1>
 						<p className="mt-4 text-xl text-gray-600 dark:text-gray-400">Просмотрите наши вдохновляющие проекты</p>
 					</div>
 				</div>
-				<div className="mt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-					<label className="block text-sm text-black dark:text-white mb-1">
-						Категория
-					</label>
-					{/*<Listbox value={selected} onChange={setSelected}>*/}
-					{/*	<div className="relative z-10">*/}
-					{/*		<Listbox.Button className="relative cursor-pointer w-full max-w-[250px] shadow-sm border border-gray-300 rounded-xl bg-white hover:bg-gray-50 py-2 pl-3 pr-10 text-left sm:text-sm dark:bg-black dark:border-white/20 dark:hover:bg-neutral-900">*/}
-					{/*			<span className="block truncate">{selected.name}</span>*/}
-					{/*			<span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">*/}
-					{/*				<ChevronUpDownIcon*/}
-					{/*					className="h-5 w-5 text-gray-400"*/}
-					{/*					aria-hidden="true"*/}
-					{/*				/>*/}
-					{/*			</span>*/}
-					{/*		</Listbox.Button>*/}
-					{/*		<Transition*/}
-					{/*			as={Fragment}*/}
-					{/*			leave="transition ease-in duration-100"*/}
-					{/*			leaveFrom="opacity-100"*/}
-					{/*			leaveTo="opacity-0"*/}
-					{/*		>*/}
-					{/*			<Listbox.Options className="absolute max-w-[250px] mt-1 max-h-60 w-full overflow-auto rounded-xl bg-white py-1 text-base shadow-lg ring-1 ring-gray-300 focus:outline-none sm:text-sm dark:bg-black dark:shadow-black dark:ring-white/20">*/}
-					{/*				{people.map((person, personIdx) => (*/}
-					{/*					<Listbox.Option*/}
-					{/*						key={personIdx}*/}
-					{/*						className={({ active }) =>*/}
-					{/*							`relative cursor-default select-none py-2 pl-10 pr-4 ${*/}
-					{/*								active ? 'bg-gray-100 dark:bg-neutral-800' : 'text-gray-600'*/}
-					{/*							}`*/}
-					{/*						}*/}
-					{/*						value={person}*/}
-					{/*					>*/}
-					{/*						{({ selected }) => (*/}
-					{/*							<>*/}
-					{/*								<span*/}
-					{/*									className={`block truncate text-gray-600 dark:text-gray-400 ${*/}
-					{/*										selected ? 'font-medium text-gray-900 dark:text-white' : 'font-normal'*/}
-					{/*									}`}*/}
-					{/*								>*/}
-					{/*								{person.name}*/}
-					{/*								</span>*/}
-					{/*								{selected ? (*/}
-					{/*									<span className="absolute inset-y-0 left-0 flex items-center pl-3 text-mainBlue">*/}
-					{/*										<CheckIcon className="h-5 w-5" aria-hidden="true" />*/}
-					{/*									</span>*/}
-					{/*								) : null}*/}
-					{/*							</>*/}
-					{/*						)}*/}
-					{/*					</Listbox.Option>*/}
-					{/*				))}*/}
-					{/*			</Listbox.Options>*/}
-					{/*		</Transition>*/}
-					{/*	</div>*/}
-					{/*</Listbox>*/}
-					<Dropdown>
-						<DropdownTrigger>
-							<Button
-								variant="faded"
-								className="capitalize border-1"
-							>
-								{selectedKey}
-								<ChevronUpDownIcon
-									className="h-5 w-5 text-gray-400"
-									aria-hidden="true"
-								/>
-							</Button>
-						</DropdownTrigger>
-						<DropdownMenu
-							aria-label="Single selection example"
-							variant="flat"
-							disallowEmptySelection
-							selectionMode="single"
-							selectedKeys={selectedKey}
-							// @ts-ignore
-							onSelectionChange={(keys) => setSelectedKey(keys)}
+				<div className="mt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 sticky top-20 z-100">
+					<div className="overflow-auto">
+						<Tabs
+							variant="solid"
+							color="primary"
+							size="md"
+							aria-label="Tabs variants"
+							selectedKey={selectedCategory}
+							onSelectionChange={setSelectedCategory}
+							classNames={{
+								base: 'min-w-full',
+								tabList: 'w-full',
+								tabContent: 'text-black dark:text-white'
+							}}
 						>
-							{categories.map(category => (
-								<DropdownItem key={category.name}>{category.name}</DropdownItem>
-							))}
-						</DropdownMenu>
-					</Dropdown>
+							<Tab key="sites" title="Сайты" />
+							<Tab key="mobile" title="Мобильные приложения" />
+							<Tab key="ai" title="Интеграция нейросетей" />
+							<Tab key="context" title="Контекстная реклама" />
+							<Tab key="design" title="Индивидуальная дизайн" />
+							<Tab key="support" title="Техническая поддержка" />
+						</Tabs>
+					</div>
 				</div>
 				<div className="mt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
