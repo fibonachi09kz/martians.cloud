@@ -1,7 +1,7 @@
 'use client';
 
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
-import {Button, Input, Textarea, Select, SelectItem} from "@nextui-org/react";
+import {Button, Input, Select, SelectItem} from "@nextui-org/react";
 import emailjs from '@emailjs/browser';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
@@ -98,7 +98,7 @@ const FlexContactForm = ({service = 'Разработка сайтов', contact
 
 
 	return (
-		<div className="relative bg-white dark:bg-black my-12 sm:my-24 sm:border rounded-md border-gray-200 dark:border-white/20 max-w-7xl mx-auto" id="flex-contact-form">
+		<div className="relative bg-white dark:bg-black my-12 sm:my-24 sm:border rounded-2xl border-gray-200 dark:border-white/20 max-w-7xl mx-auto" id="flex-contact-form">
 			<div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-6">
 				<div className="sm:py-12 px-0 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12 sm:border-r border-gray-300 dark:border-white/20">
 					<div className="mx-auto max-w-lg">

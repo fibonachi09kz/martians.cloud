@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout/Layout";
 import { Metadata } from 'next'
-import ContactsForm from "@/components/ContactsPage/ContactsForm";
+import FlexContactForm from "@/components/Widgets/ContactForm/FlexContactForm";
 
 export const metadata: Metadata = {
     title: 'Контакты | Web-студия Martians',
@@ -31,7 +31,8 @@ export const metadata: Metadata = {
 const ContactsPage = () => {
     return (
         <Layout>
-            <ContactsForm />
+            {/*<ContactsForm />*/}
+            <FlexContactForm />
         </Layout>
     )
 }
