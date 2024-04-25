@@ -1,20 +1,22 @@
 import {ImageInterface} from "@/types/Image";
 
-export interface ArticleInterface {
+export interface Project {
 	acf: {
-		descr: string;
-		backgroundpic: ImageInterface;
-		mainpic: ImageInterface;
-	},
-	content: {
-		protected: boolean;
-		rendered: string;
+		"detail-descr": [];
+		gallery: [];
+		"main-img": ImageInterface;
+		"small-descr": string;
+		techs: [];
+		url: string;
+		domain: string;
+		categories: [];
 	},
 	date: string;
 	date_gmt: string;
 	guid: {
 		rendered: string;
 	},
+	"project-categories": [number];
 	id: number;
 	link: string;
 	menu_order: number;

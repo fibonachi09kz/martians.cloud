@@ -1,6 +1,7 @@
 import {Metadata} from "next";
 import Layout from "@/components/Layout/Layout";
 import Projects from "@/components/ProjectsPage/Projects";
+import {API_ENDPOINTS} from "@/constants/API";
 
 export const metadata: Metadata = {
 	title: 'Проекты | Web-студия Martians',
@@ -27,6 +28,8 @@ export const metadata: Metadata = {
 		type: 'website',
 	},
 }
+
+
 
 const ProjectsPage = () => {
 	return (
