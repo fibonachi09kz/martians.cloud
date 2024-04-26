@@ -207,8 +207,19 @@
 	@apply text-2xl mb-5 font-medium
 }
 .blog-content ul {
-	@apply list-disc mb-5 list-inside
+	@apply list-disc mb-5 list-outside pl-5
 }
 .blog-content ol {
-	@apply list-decimal mb-5 list-inside
+	@apply list-decimal mb-5 list-outside pl-5
+}
+
+
+.project-gallery .swiper-button-next {
+	@apply right-1
+}
+.project-gallery .swiper-button-prev {
+	@apply left-1
+}
+.project-gallery .swiper-button-next:after, .project-gallery .swiper-button-prev:after {
+	@apply text-2xl
 }

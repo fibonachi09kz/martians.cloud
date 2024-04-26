@@ -63,7 +63,7 @@ const FlexContactForm = ({service = 'Разработка сайтов', contact
 		},
 		validationSchema: Yup.object({
 			name: Yup.string()
-				.max(15, 'Must be 15 characters or less')
+				.max(15, 'Не более 15-ти символов')
 				.required('Введите имя'),
 			email: Yup.string()
 				.email('Введите корректный email')

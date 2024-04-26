@@ -22,7 +22,7 @@ const Header = () => {
 			<div className="w-full max-w-7xl mx-auto px-5">
 				<nav className="flex items-center justify-between py-2" aria-label="Global">
 					<div className="flex xl:flex-1 items-center gap-3 mr-3">
-						<Logo withTitle={false} isDark={false} />
+						<Logo withTitle={true} isDark={false} />
 						{/*<p className="text-sm text-gray-300 leading-4.5">Development Studio</p>*/}
 					</div>
 					<div className="flex xl:hidden">
