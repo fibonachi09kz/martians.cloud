@@ -9,7 +9,7 @@ const SiteFeatures = () => {
 				<h2 className="mb-4 text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">Преимущества вашего сайта</h2>
 				<p className="text-gray-500 text-center sm:text-xl dark:text-gray-400">3 главных фактора, которые смогут выделить ваш сайт среди конкурентов и завоевать доверие клиентов</p>
 			</div>
-			<div className="grid grid-cols-3 gap-8">
+			<div className="grid md:grid-cols-3 gap-8">
 				<div>
 					<Icon icon="solar:devices-bold-duotone" className="text-primary w-12 h-12 flex-none mx-auto" />
 					<h3 className="text-black dark:text-white text-2xl text-center font-bold mt-3">Уникальность</h3>

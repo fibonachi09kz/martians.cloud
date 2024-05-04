@@ -258,7 +258,7 @@ const FlexContactForm = ({service = 'Разработка сайтов', contact
 									{services.map((service) => (
 										<SelectItem key={service.name} textValue={service.name}>
 											<div className="flex gap-1.5 items-center">
-												{service.listIcon()}
+												{service.listIcon('w-5 h-5 flex-none text-current')}
 												{service.name}
 											</div>
 										</SelectItem>

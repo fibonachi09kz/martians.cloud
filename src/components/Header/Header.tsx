@@ -19,7 +19,7 @@ const Header = () => {
 
 	return (
 		<header className="w-full fixed bg-white/80 dark:bg-black/80 top-0 left-0 backdrop-blur z-50 border-b border-gray-200 dark:border-white/20">
-			<div className="w-full max-w-7xl mx-auto px-5">
+			<div className="w-full max-w-7xl mx-auto px-4">
 				<nav className="flex items-center justify-between py-2" aria-label="Global">
 					<div className="flex xl:flex-1 items-center gap-3 mr-3">
 						<Logo withTitle={true} isDark={false} />
@@ -35,7 +35,7 @@ const Header = () => {
 							<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 						</button>
 					</div>
-					<div className="hidden xl:flex lg:gap-x-6">
+					<div className="hidden xl:flex lg:gap-x-3">
 						{navigation.map((item: NavigationItem) => {
 							const isActive = pathname === item.href
 							return (

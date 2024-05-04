@@ -5,9 +5,11 @@ import { useState} from "react";
 import { Navigation, Thumbs } from 'swiper/modules';
 import Image from "next/image";
 
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+
 interface IProjectDetailSliderProps {
 	images: ImageInterface[]
 }
@@ -30,7 +32,8 @@ const ProjectDetailSlider = ({ images }: IProjectDetailSliderProps) => {
 			>
 				{images.map(image => (
 					<SwiperSlide key={image.id}>
-						<Image src={image.url} alt={image.alt} width={image.width} height={image.height} className="w-full h-full object-cover" />
+						<Image src={image.url} alt={image.alt} width={image.width} height={image.height} className="w-full h-full object-cover" loading="lazy" />
+						<div className="swiper-lazy-preloader"></div>
 					</SwiperSlide>
 				))}
 
@@ -52,7 +55,8 @@ const ProjectDetailSlider = ({ images }: IProjectDetailSliderProps) => {
 						key={image.id}
 						className={`!h-12 sm:!h-20 flex-none overflow-hidden border-2 rounded-lg sm:rounded-2xl cursor-pointer transition-all ${activeSlide === index ? ' border-primary' : ' border-transparent'}`}
 					>
-						<Image src={image.url} alt={image.alt} width={image.width} height={image.height} className="w-full h-full object-cover" />
+						<Image src={image.url} alt={image.alt} width={image.width} height={image.height} className="w-full h-full object-cover" loading="lazy" />
+						<div className="swiper-lazy-preloader"></div>
 					</SwiperSlide>
 				))}
 			</Swiper>

@@ -6,7 +6,7 @@ export interface ServiceInterface {
 	id: number;
 	name: Service;
 	icon: () => JSX.Element;
-	listIcon: () => JSX.Element;
+	listIcon: (classes: string) => JSX.Element;
 	description: string;
 	detailLink: string;
 	mainColor: string;

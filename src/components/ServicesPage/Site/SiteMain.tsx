@@ -2,6 +2,7 @@ import HPTariffs from "@/components/HomePage/HPTariffs/HPTariffs";
 import FlexContactForm from "@/components/Widgets/ContactForm/FlexContactForm";
 import Widget from "@/components/Blocks/Widget/Widget";
 import SiteFeatures from "@/components/ServicesPage/Site/SiteFeatures";
+import SiteWhatsInclude from "@/components/ServicesPage/Site/SiteWhatsInclude";
 
 const SiteMain = () => {
 	return (
@@ -29,6 +30,7 @@ const SiteMain = () => {
 					btnLinkHref="#flex-contact-form"
 				/>
 			</div>
+			<SiteWhatsInclude />
 			<div className="px-4">
 				<FlexContactForm service="Разработка сайтов" />
 			</div>

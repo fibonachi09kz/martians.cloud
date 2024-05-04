@@ -12,7 +12,7 @@ const ProjectDetail = ({ project }: IProjectDetailProps) => {
 		<section className="py-8 bg-white md:py-16 dark:bg-black antialiased">
 			<div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
 				<div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
-					<div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
+					<div className="shrink-0 max-w-lg lg:max-w-none lg:w-full mx-auto">
 						<ProjectDetailSlider images={project.acf.gallery} />
 					</div>
 
@@ -21,7 +21,7 @@ const ProjectDetail = ({ project }: IProjectDetailProps) => {
 							{project.title.rendered}
 						</h1>
 						<div className="text-base text-gray-800 dark:text-gray-400 mt-2">{project.acf["small-descr"]}</div>
-						<div className="mt-4 sm:items-center sm:gap-4 sm:flex border-l-2 border-primary pl-2">
+						<div className="mt-6 sm:items-center sm:gap-4 sm:flex border-l-2 border-primary pl-2">
 							<p className="text-base font-medium leading-none text-gray-500 dark:text-gray-400">
 								ООО Югралифт
 							</p>
@@ -31,7 +31,7 @@ const ProjectDetail = ({ project }: IProjectDetailProps) => {
 							</Link>
 						</div>
 
-						<div className="mt-6 gap-4 items-center flex sm:mt-8 flex-wrap">
+						<div className="mt-4 gap-4 items-center flex sm:mt-6 flex-wrap">
 							<Button
 								href="#flex-contact-form"
 								as={Link}
