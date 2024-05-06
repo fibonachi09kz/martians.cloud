@@ -1,6 +1,6 @@
 'use client'
-import {Button, Ripple, useButton} from "@nextui-org/react";
-import {Card, CardFooter, CardHeader} from "@nextui-org/card";
+import {Button} from "@nextui-org/react";
+import {Card, CardHeader} from "@nextui-org/card";
 import Link from "next/link";
 import Image from "next/image";
 import supportImg from './img/support.png';
@@ -29,7 +29,7 @@ const HPServices = () => {
             <div className="mt-8 px-5 sm:mt-12 mx-auto max-w-7xl grid grid-cols-1 xs:grid-cols-2 md:grid-cols-6 gap-5">
                 <Button
                     as={Link}
-                    href="/123"
+                    href="/services/site"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
                     <Card className="h-[320px] sm:h-[450px] w-full">
@@ -46,7 +46,7 @@ const HPServices = () => {
                 </Button>
                 <Button
                     as={Link}
-                    href="/123"
+                    href="/services/mobile"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
                     <Card className="h-[320px] sm:h-[450px] w-full">
@@ -63,7 +63,7 @@ const HPServices = () => {
                 </Button>
                 <Button
                     as={Link}
-                    href="/123"
+                    href="/services/ai"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
                     <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>
@@ -82,7 +82,7 @@ const HPServices = () => {
 
                 <Button
                     as={Link}
-                    href="/123"
+                    href="/services/context"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
                     <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>
@@ -102,7 +102,7 @@ const HPServices = () => {
 
                 <Button
                     as={Link}
-                    href="/123"
+                    href="/services/design"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
                     <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>
@@ -123,7 +123,7 @@ const HPServices = () => {
 
                 <Button
                     as={Link}
-                    href="/123"
+                    href="/services/support"
                     className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
                 >
                     <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>
