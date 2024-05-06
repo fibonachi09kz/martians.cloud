@@ -7,6 +7,8 @@ import supportImg from './img/support.png';
 import aiImg from './img/ai.jpg';
 import designImg from './img/design.png';
 import advImg from './img/adv.png';
+import mobileImg from './img/mobile.png';
+import siteImg from './img/site.png';
 
 const HPServices = () => {
 
@@ -25,40 +27,40 @@ const HPServices = () => {
                 </div>
             </div>
             <div className="mt-8 px-5 sm:mt-12 mx-auto max-w-7xl grid grid-cols-1 xs:grid-cols-2 md:grid-cols-6 gap-5">
-                {/*<Button*/}
-                {/*    as={Link}*/}
-                {/*    href="/123"*/}
-                {/*    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"*/}
-                {/*>*/}
-                {/*    <Card className="h-[320px] sm:h-[450px] w-full">*/}
-                {/*        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">*/}
-                {/*            <p className="text-tiny text-white/60 uppercase font-bold">Web Dev</p>*/}
-                {/*            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Разработка сайтов</h4>*/}
-                {/*        </CardHeader>*/}
-                {/*        <Image*/}
-                {/*            alt="Card background"*/}
-                {/*            className="z-0 w-full h-full object-cover"*/}
-                {/*            src="/images/1.png"*/}
-                {/*        />*/}
-                {/*    </Card>*/}
-                {/*</Button>*/}
-                {/*<Button*/}
-                {/*    as={Link}*/}
-                {/*    href="/123"*/}
-                {/*    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"*/}
-                {/*>*/}
-                {/*    <Card className="h-[320px] sm:h-[450px] w-full">*/}
-                {/*        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">*/}
-                {/*            <p className="text-tiny text-white/60 uppercase font-bold">Mobile Dev</p>*/}
-                {/*            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Разработка мобильных приложений</h4>*/}
-                {/*        </CardHeader>*/}
-                {/*        <Image*/}
-                {/*            alt="Card background"*/}
-                {/*            className="z-0 w-full h-full object-cover"*/}
-                {/*            src="/images/2.png"*/}
-                {/*        />*/}
-                {/*    </Card>*/}
-                {/*</Button>*/}
+                <Button
+                    as={Link}
+                    href="/123"
+                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
+                >
+                    <Card className="h-[320px] sm:h-[450px] w-full">
+                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
+                            <p className="text-tiny text-white/60 uppercase font-bold">Web Dev</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Разработка сайтов</h4>
+                        </CardHeader>
+                        <Image
+                            alt="Card background"
+                            className="z-0 w-full h-full object-cover"
+                            src={siteImg}
+                        />
+                    </Card>
+                </Button>
+                <Button
+                    as={Link}
+                    href="/123"
+                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
+                >
+                    <Card className="h-[320px] sm:h-[450px] w-full">
+                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
+                            <p className="text-tiny text-white/60 uppercase font-bold">Mobile Dev</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Разработка мобильных приложений</h4>
+                        </CardHeader>
+                        <Image
+                            alt="Card background"
+                            className="z-0 w-full h-full object-cover"
+                            src={mobileImg}
+                        />
+                    </Card>
+                </Button>
                 <Button
                     as={Link}
                     href="/123"
