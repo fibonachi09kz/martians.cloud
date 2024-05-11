@@ -223,3 +223,7 @@
 .project-gallery .swiper-button-next:after, .project-gallery .swiper-button-prev:after {
 	@apply text-2xl
 }
+
+.lottie svg {
+	transform: none !important;
+}

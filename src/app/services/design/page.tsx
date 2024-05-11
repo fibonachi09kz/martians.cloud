@@ -1,6 +1,6 @@
 import {Metadata} from "next";
 import Layout from "@/components/Layout/Layout";
-import SiteMain from "@/components/ServicesPage/Site/SiteMain";
+import DesignMain from "@/components/ServicesPage/Design/DesignMain/DesignMain";
 
 export const metadata: Metadata = {
 	title: 'Индивидуальный дизайн | Web-студия Martians',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const DesignPage = () => {
 	return (
 		<Layout>
-
+			<DesignMain />
 		</Layout>
 	)
 }
