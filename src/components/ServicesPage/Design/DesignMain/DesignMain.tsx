@@ -3,6 +3,7 @@ import ServicePageTitle from "@/components/UI/ServicePageTitle";
 import OtherServices from "@/components/Widgets/OtherServices/OtherServices";
 import DesignCTAs from "@/components/ServicesPage/Design/DesignCTAs/DesignCTAs";
 import DesignAlso from "@/components/ServicesPage/Design/DesignAlso/DesignAlso";
+import DesignGallery from "@/components/ServicesPage/Design/DesignGallery/DesignGallery";
 
 const DesignMain = () => {
 	return (
@@ -11,6 +12,7 @@ const DesignMain = () => {
 
 			<DesignCTAs />
             <DesignAlso />
+            <DesignGallery />
 			<OtherServices />
 			<div className="px-4">
 				<FlexContactForm service="Индивидуальный дизайн"/>
