@@ -6,7 +6,7 @@ export const navigation: NavigationType = [
 	{ name: 'Услуги', href: '/services' },
 	{ name: 'Проекты', href: '/projects' },
 	{ name: 'Технологии', href: '/technologies' },
-	{ name: 'Блог', href: '/blog' },
+	//{ name: 'Блог', href: '/blog' },
 	{ name: 'О нас', href: '/about' },
 	{ name: 'Контакты', href: '/contacts' }
 ]
