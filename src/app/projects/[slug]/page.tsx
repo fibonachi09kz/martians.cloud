@@ -27,10 +27,12 @@ const ArticleDetailPage = async ({ params }: { params: { slug: string } }) => {
 
 	return (
 		<Layout>
-			<ProjectDetail project={project[0]} />
-			<div className="px-4">
-				<FlexContactForm />
-			</div>
+            <div className="bg-gray-100 dark:bg-zinc-900">
+                <ProjectDetail project={project[0]} />
+                <div className="px-4">
+                    <FlexContactForm />
+                </div>
+            </div>
 		</Layout>
 	)
 }

@@ -7,12 +7,12 @@ import DesignGallery from "@/components/ServicesPage/Design/DesignGallery/Design
 
 const DesignMain = () => {
 	return (
-		<section className="flex-1 bg-white dark:bg-black">
+		<section className="flex-1 bg-gray-100 dark:bg-zinc-900">
 			<ServicePageTitle title="Индивидуальный дизайн" subtitle="Наша команда дизайнеров сделает ваш проект уникальным и привлекательным для клиентов" />
 
 			<DesignCTAs />
             <DesignAlso />
-            <DesignGallery />
+            {/*<DesignGallery />*/}
 			<OtherServices />
 			<div className="px-4">
 				<FlexContactForm service="Индивидуальный дизайн"/>

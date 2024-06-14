@@ -10,7 +10,7 @@ const OtherServices = () => {
 			</div>
 			<div className="flex flex-wrap justify-center gap-4">
 				{services.map(service => (
-					<Link href={`/services${service.detailLink}`} key={service.id} className="px-3 py-2 rounded-2xl whitespace-nowrap flex items-center gap-1.5 text-base border hover:border-primary dark:border-white/20 dark:hover:border-primary">
+					<Link href={`/services${service.detailLink}`} key={service.id} className="px-3 py-2 rounded-2xl whitespace-nowrap flex items-center gap-1.5 text-base border bg-white dark:bg-black hover:border-primary dark:border-white/20 dark:hover:border-primary">
 						{service.listIcon('w-6 h-6 flex-none text-current')}
 						<span>{service.name}</span>
 					</Link>

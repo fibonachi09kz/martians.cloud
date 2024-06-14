@@ -6,7 +6,7 @@ import SiteWhatsInclude from "@/components/ServicesPage/Site/SiteWhatsInclude/Si
 
 const SiteMain = () => {
 	return (
-		<section className="flex-1 bg-white dark:bg-black">
+		<section className="flex-1 bg-gray-100 dark:bg-zinc-900">
 			<div className="py-12 sm:py-16 lg:py-20">
 				<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 					<div className="text-center">
@@ -15,18 +15,16 @@ const SiteMain = () => {
 					</div>
 				</div>
 			</div>
-			<div className="max-w-7xl mx-auto">
-				<div className="mb-24">
-					<HPTariffs />
-				</div>
+            <div className="mb-24">
+                <HPTariffs />
+            </div>
 
-				<SiteFeatures />
-			</div>
+            <SiteFeatures />
 			<div className="md:px-4 max-w-7xl mx-auto">
 				<Widget
 					subHeader="А ещё вы можете..."
 					title="Заказать мобильное приложение"
-					subTitle="Мы свяжем ваш сайт с мобильным приложением, расширив удобство использования вашими клиентами"
+					subTitle="Мы свяжем ваш сайт с мобильным приложением, расширив удобство использования вашим клиентами"
 					btnLinkHref="#flex-contact-form"
 				/>
 			</div>

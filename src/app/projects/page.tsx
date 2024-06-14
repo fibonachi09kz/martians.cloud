@@ -43,10 +43,12 @@ const ProjectsPage = async () => {
 
 	return (
 		<Layout>
-			<Projects initialProjects={initialProjects} />
-			<div className="px-4">
-				<FlexContactForm />
-			</div>
+            <div className="bg-gray-100 dark:bg-zinc-900">
+                <Projects initialProjects={initialProjects} />
+                <div className="px-4">
+                    <FlexContactForm />
+                </div>
+            </div>
 		</Layout>
 	)
 }

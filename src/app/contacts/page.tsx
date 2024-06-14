@@ -32,7 +32,7 @@ const ContactsPage = () => {
     return (
         <Layout>
             {/*<ContactsForm />*/}
-            <div className="px-4">
+            <div className="px-4 bg-gray-100 dark:bg-zinc-900 flex-grow">
                 <FlexContactForm />
             </div>
         </Layout>

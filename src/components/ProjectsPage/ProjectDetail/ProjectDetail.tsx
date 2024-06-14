@@ -9,7 +9,7 @@ interface IProjectDetailProps {
 }
 const ProjectDetail = ({ project }: IProjectDetailProps) => {
 	return (
-		<section className="py-8 bg-white md:py-16 dark:bg-black antialiased">
+		<section className="py-8 md:py-16 antialiased">
 			<div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
 				<div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
 					<div className="shrink-0 max-w-lg lg:max-w-none lg:w-full mx-auto">

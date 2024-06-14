@@ -8,8 +8,8 @@ import {Icon} from "@iconify/react";
 
 const DesignCTAs = () => {
 	return (
-		<section className="bg-white dark:bg-black px-4">
-			<div className="flex flex-col-reverse items-center py-8 md:px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+		<section className="px-4 space-y-8 mb-24">
+			<div className="flex flex-col-reverse items-center p-6 md:p-12 mx-auto max-w-7xl xl:gap-16 md:grid md:grid-cols-2 bg-white rounded-2xl dark:bg-black">
                 <div className="mt-8 md:mt-0">
                     <h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Дизайн сайтов</h2>
                     <p className="mb-4 font-light text-gray-500 md:text-lg dark:text-gray-400">Если вам нужно добавить функционал только на одну из платформ, мы с легкостью адаптируем код, чтобы соответствовать вашим потребностям, не затрагивая другую платформу</p>
@@ -56,7 +56,7 @@ const DesignCTAs = () => {
                         Заказать дизайн
                     </Button>
                 </div>
-                <div className="lottie">
+                <div className="lottie -mt-[70px] -mb-[20px] md:-mt-[110px] md:-mb-[43px]">
                     <Lottie options={{
                         loop: true,
                         autoplay: true,
@@ -64,8 +64,8 @@ const DesignCTAs = () => {
                     }} isClickToPauseDisabled={true}/>
                 </div>
             </div>
-            <div className="flex flex-col items-center py-8 md:px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-                <div className="lottie">
+            <div className="flex flex-col items-center p-6 md:p-12 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 bg-white rounded-2xl dark:bg-black">
+                <div className="lottie -mt-[70px] -mb-[20px] md:-mt-[110px] md:-mb-[43px]">
                     <Lottie options={{
                         loop: true,
                         autoplay: true,

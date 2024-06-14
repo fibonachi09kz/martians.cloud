@@ -59,7 +59,7 @@ const Projects = ({ initialProjects }: IProjectsProps) => {
 	}, []);
 
 	return (
-		<section className="flex-1 bg-white dark:bg-black">
+		<section className="flex-1 px-4">
 			<div className="py-12 sm:py-16 lg:py-20 relative">
 				<div className="mx-auto max-w-[1300px] px-4 sm:px-6 lg:px-8">
 					<div className="text-center">
@@ -67,7 +67,7 @@ const Projects = ({ initialProjects }: IProjectsProps) => {
 						<p className="mt-4 text-xl text-gray-600 dark:text-gray-400">Просмотрите наши вдохновляющие проекты</p>
 					</div>
 				</div>
-				<div className="mt-8 mx-auto max-w-[1300px] px-4 sm:px-6 lg:px-8 sticky top-20 z-100">
+				<div className="mt-8 mx-auto max-w-[1300px] sticky top-20 z-100">
 					<div className="overflow-auto">
 						<Tabs
 							variant="solid"
@@ -78,7 +78,7 @@ const Projects = ({ initialProjects }: IProjectsProps) => {
 							onSelectionChange={setSelectedCategory}
 							classNames={{
 								base: 'min-w-full',
-								tabList: 'w-full',
+								tabList: 'w-full bg-gray-200 dark:bg-zinc-800',
 								tabContent: 'text-black dark:text-white'
 							}}
 						>
@@ -88,7 +88,7 @@ const Projects = ({ initialProjects }: IProjectsProps) => {
 						</Tabs>
 					</div>
 				</div>
-				<div className="mt-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div className="mt-8 mx-auto max-w-7xl">
 					{isLoading ? (
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 							{[1, 2, 3].map((_, index) => (
@@ -115,7 +115,7 @@ const Projects = ({ initialProjects }: IProjectsProps) => {
 					) : (
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 							{projects.map(project => (
-								<Link key={project.id} href={`/projects/${project.slug}`} className="group flex flex-col transition-all overflow-hidden bg-gray-50 border rounded-xl shadow-sm hover:shadow-xl active:shadow-sm dark:bg-neutral-900 dark:border-white/20">
+								<Link key={project.id} href={`/projects/${project.slug}`} className="group flex flex-col transition-all overflow-hidden bg-gray-100 border border-2 border-white dark:border-black rounded-xl shadow-sm hover:shadow-xl active:shadow-sm dark:bg-zinc-900">
 									<div className="h-32 flex items-center justify-center px-4">
 										<Image src={project.acf['main-img'].url} className="h-1/3 w-auto filter dark:invert" width={216} height={44} alt="Logo" />
 									</div>

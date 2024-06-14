@@ -98,9 +98,9 @@ const FlexContactForm = ({service = 'Разработка сайтов', contact
 
 
 	return (
-		<div className="relative bg-white dark:bg-black my-12 sm:my-24 sm:border rounded-2xl border-gray-200 dark:border-white/20 max-w-7xl mx-auto" id="flex-contact-form">
-			<div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-6">
-				<div className="sm:py-12 px-0 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12 sm:border-r border-gray-300 dark:border-white/20">
+		<div className="relative  my-12 sm:my-24 max-w-7xl mx-auto" id="flex-contact-form">
+			<div className="relative mx-auto max-w-7xl grid lg:grid-cols-6 gap-8">
+				<div className="bg-white dark:bg-black rounded-2xl py-6 lg:py-12 px-6 lg:col-span-2 lg:px-8 xl:pr-12">
 					<div className="mx-auto max-w-lg">
 						<h1 className="text-3xl font-bold text-black dark:text-white tracking-tight sm:text-4xl">Оставить заявку</h1>
 						<p className="mt-3 text-lg leading-6 text-gray-600 dark:text-gray-400">
@@ -127,7 +127,7 @@ const FlexContactForm = ({service = 'Разработка сайтов', contact
 						</div>
 					</div>
 				</div>
-				<div className="py-12 sm:px-6 lg:col-span-4 lg:px-8 xl:pl-12">
+				<div className="bg-white dark:bg-black rounded-2xl py-6 lg:py-12 px-6 lg:col-span-4 lg:px-8 xl:pl-12">
 					<div className="mx-auto max-w-lg lg:max-w-none">
 						<form ref={form} onSubmit={formik.handleSubmit} className="grid lg:grid-cols-2 gap-6" >
 							<div>

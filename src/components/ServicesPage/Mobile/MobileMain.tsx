@@ -6,7 +6,7 @@ import OtherServices from "@/components/Widgets/OtherServices/OtherServices";
 
 const MobileMain = () => {
 	return (
-		<section className="flex-1 bg-white dark:bg-black">
+		<section className="flex-1 bg-gray-100 dark:bg-zinc-900">
 			<div className="py-12 sm:py-16 lg:py-20">
 				<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 					<div className="text-center">

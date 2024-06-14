@@ -10,17 +10,17 @@ const SiteFeatures = () => {
 				<p className="text-gray-500 text-center sm:text-xl dark:text-gray-400">3 главных фактора, которые смогут выделить ваш сайт среди конкурентов и завоевать доверие клиентов</p>
 			</div>
 			<div className="grid md:grid-cols-3 gap-8">
-				<div>
+				<div className="py-8 px-6 md:p-10 bg-white rounded-2xl md:col-span-1 dark:bg-black">
 					<Icon icon="solar:devices-bold-duotone" className="text-primary w-12 h-12 flex-none mx-auto" />
 					<h3 className="text-black dark:text-white text-2xl text-center font-bold mt-3">Уникальность</h3>
 					<p className="m-0 text-base text-center text-gray-700 dark:text-gray-200 mt-2">Сайт будет иметь уникальный дизайн и адаптивность под все платформы</p>
 				</div>
-				<div>
+				<div className="py-8 px-6 md:p-10 bg-white rounded-2xl md:col-span-1 dark:bg-black">
 					<Icon icon="solar:atom-bold-duotone" className="text-primary w-12 h-12 flex-none mx-auto" />
 					<h3 className="text-black dark:text-white text-2xl text-center font-bold mt-3">Функциональность</h3>
 					<p className="m-0 text-base text-center text-gray-700 dark:text-gray-200 mt-2">Сайт будет разработан с учётом требований всех бизнес-процессов</p>
 				</div>
-				<div>
+				<div className="py-8 px-6 md:p-10 bg-white rounded-2xl md:col-span-1 dark:bg-black">
 					<Icon icon="solar:shield-minimalistic-bold-duotone" className="text-primary w-12 h-12 flex-none mx-auto" />
 					<h3 className="text-black dark:text-white text-2xl text-center font-bold mt-3">Безопасность</h3>
 					<p className="m-0 text-base text-center text-gray-700 dark:text-gray-200 mt-2">Сайт будет защищен от самых распространённых вирусов и взломов</p>
