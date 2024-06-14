@@ -2,7 +2,7 @@ import HPTariffs from "@/components/HomePage/HPTariffs/HPTariffs";
 import FlexContactForm from "@/components/Widgets/ContactForm/FlexContactForm";
 import Widget from "@/components/Blocks/Widget/Widget";
 import SiteFeatures from "@/components/ServicesPage/Site/SiteFeatures";
-import SiteWhatsInclude from "@/components/ServicesPage/Site/SiteWhatsInclude";
+import SiteWhatsInclude from "@/components/ServicesPage/Site/SiteWhatsInclude/SiteWhatsInclude";
 
 const SiteMain = () => {
 	return (
