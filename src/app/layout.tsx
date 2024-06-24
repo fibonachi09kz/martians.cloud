@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { ThemeProviderWrapper } from "@/providers/theme";
 import {NextUIProvider} from "@nextui-org/react";
 import {Providers} from "@/app/providers";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({
 	subsets: ['cyrillic'],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: {children: React.ReactNode }) {
 					</Providers>
 				</ThemeProviderWrapper>
 			</body>
+            <SpeedInsights />
 			<Analytics />
 		</html>
 	)
