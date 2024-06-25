@@ -4,6 +4,7 @@ import ContextTariffs from "@/components/ServicesPage/Context/ContextTariffs/Con
 import ContextExtended from "@/components/ServicesPage/Context/ContextExtended/ContextExtended";
 import ContextFeatures from "@/components/ServicesPage/Context/ContextFeatures/ContextFeatures";
 import ContextWidget from "@/components/ServicesPage/Context/ContextWidget/ContextWidget";
+import ContextWhatsInclude from "@/components/ServicesPage/Context/ContextWhatsInclude/ContextWhatsInclude";
 
 const ContextMain = () => {
     return (
@@ -17,6 +18,8 @@ const ContextMain = () => {
             <ContextFeatures />
 
             <ContextWidget />
+
+            <ContextWhatsInclude />
 
             <div className="px-4">
                 <FlexContactForm service="Контекстная реклама"/>
