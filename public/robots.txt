@@ -4,3 +4,4 @@ Host: martians.cloud
 Disallow: /steps/
 Disallow: /brief/
 Disallow: /blog/
+Sitemap: http://martians.cloud/sitemap.xml
