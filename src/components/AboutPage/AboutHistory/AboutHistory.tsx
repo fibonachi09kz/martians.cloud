@@ -1,6 +1,7 @@
 'use client'
 import {CubeIcon} from "@heroicons/react/24/outline";
 import {Button} from "@nextui-org/react";
+import Link from "next/link";
 const AboutHistory = () => {
 	return (
 		<div className="bg-white dark:bg-black">
@@ -38,6 +39,8 @@ const AboutHistory = () => {
 								Мы не останавливаемся перед невозможными задачами и готовы выложиться на все 100 процентов, чтобы создать уникальный продукт для каждого нашего клиента. Наша команда не довольствуется стандартами, она их устанавливает.
 							</p>
 							<Button
+								href="/contacts"
+								as={Link}
 								color="primary"
 								size="md"
 								className="text-base font-medium mt-12"

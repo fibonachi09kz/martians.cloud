@@ -28,7 +28,7 @@ const ProjectDetailSlider = ({ images }: IProjectDetailSliderProps) => {
 				thumbs={{ swiper: thumbsSwiper }}
 				modules={[Navigation, Thumbs]}
 				onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
-				className="project-gallery select-none overflow-hidden rounded-lg sm:rounded-2xl h-48 md:h-72 border shadow"
+				className="project-gallery select-none overflow-hidden rounded-lg sm:rounded-2xl h-48 md:h-80 border shadow dark:border-black/30"
 			>
 				{images.map(image => (
 					<SwiperSlide key={image.id}>

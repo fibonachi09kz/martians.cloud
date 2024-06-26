@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /
+Disallow:
+Host: martians.cloud
+Disallow: /steps/
+Disallow: /brief/
+Disallow: /blog/

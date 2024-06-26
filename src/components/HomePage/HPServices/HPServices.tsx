@@ -26,7 +26,7 @@ const HPServices = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-8 px-5 sm:mt-12 mx-auto max-w-7xl grid grid-cols-1 xs:grid-cols-2 md:grid-cols-6 gap-5">
+            <div className="mt-8 px-5 sm:mt-12 mx-auto max-w-7xl grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-5">
                 <Button
                     as={Link}
                     href="/services/site"
@@ -34,8 +34,8 @@ const HPServices = () => {
                 >
                     <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">Web Dev</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Разработка сайтов</h4>
+                            <p className="text-base text-white/60 uppercase font-semibold">Web Dev</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-3xl whitespace-break-spaces">Разработка сайтов</h4>
                         </CardHeader>
                         <Image
                             alt="Card background"
@@ -51,8 +51,8 @@ const HPServices = () => {
                 >
                     <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">Mobile Dev</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Разработка мобильных приложений</h4>
+                            <p className="text-base text-white/60 uppercase font-semibold">Mobile Dev</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-3xl whitespace-break-spaces">Разработка мобильных приложений</h4>
                         </CardHeader>
                         <Image
                             alt="Card background"
@@ -61,24 +61,24 @@ const HPServices = () => {
                         />
                     </Card>
                 </Button>
-                <Button
-                    as={Link}
-                    href="/services/ai"
-                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
-                >
-                    <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>
-                    <Card className="h-[320px] sm:h-[450px] w-full">
-                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">Neural Networks</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Интеграция нейросетей</h4>
-                        </CardHeader>
-                        <Image
-                            alt="Card background"
-                            className="z-0 w-full h-full object-cover"
-                            src={aiImg}
-                        />
-                    </Card>
-                </Button>
+                {/*<Button*/}
+                {/*    as={Link}*/}
+                {/*    href="/services/ai"*/}
+                {/*    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"*/}
+                {/*>*/}
+                {/*    <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>*/}
+                {/*    <Card className="h-[320px] sm:h-[450px] w-full">*/}
+                {/*        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">*/}
+                {/*            <p className="text-tiny text-white/60 uppercase font-bold">Neural Networks</p>*/}
+                {/*            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Интеграция нейросетей</h4>*/}
+                {/*        </CardHeader>*/}
+                {/*        <Image*/}
+                {/*            alt="Card background"*/}
+                {/*            className="z-0 w-full h-full object-cover"*/}
+                {/*            src={aiImg}*/}
+                {/*        />*/}
+                {/*    </Card>*/}
+                {/*</Button>*/}
 
                 <Button
                     as={Link}
@@ -88,8 +88,8 @@ const HPServices = () => {
                     <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>
                     <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">PPC Advertising</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Контекстная реклама</h4>
+                            <p className="text-base text-white/60 uppercase font-semibold">PPC Advertising</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-3xl whitespace-break-spaces">Контекстная реклама</h4>
                         </CardHeader>
                         <Image
                             alt="Card background"
@@ -108,8 +108,8 @@ const HPServices = () => {
                     <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>
                     <Card className="h-[320px] sm:h-[450px] w-full">
                         <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">Design</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Индивидуальный дизайн</h4>
+                            <p className="text-base text-white/60 uppercase font-semibold">Design</p>
+                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-3xl whitespace-break-spaces">Индивидуальный дизайн</h4>
                         </CardHeader>
                         <Image
                             alt="Card background"
@@ -121,24 +121,24 @@ const HPServices = () => {
                     </Card>
                 </Button>
 
-                <Button
-                    as={Link}
-                    href="/services/support"
-                    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"
-                >
-                    <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>
-                    <Card className="h-[320px] sm:h-[450px] w-full">
-                        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">
-                            <p className="text-tiny text-white/60 uppercase font-bold">Support</p>
-                            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Техническая поддержка</h4>
-                        </CardHeader>
-                        <Image
-                            alt="Card background"
-                            className="z-0 w-full h-full object-cover"
-                            src={supportImg}
-                        />
-                    </Card>
-                </Button>
+                {/*<Button*/}
+                {/*    as={Link}*/}
+                {/*    href="/services/support"*/}
+                {/*    className="p-0 m-0 h-auto rounded-2xl md:col-span-2"*/}
+                {/*>*/}
+                {/*    <span className="absolute w-full h-32 top-0 left-0 z-10 bg-gradient-to-b from-black/70 to-transparent"></span>*/}
+                {/*    <Card className="h-[320px] sm:h-[450px] w-full">*/}
+                {/*        <CardHeader className="absolute z-10 top-1 gap-1 flex-col !items-start">*/}
+                {/*            <p className="text-tiny text-white/60 uppercase font-bold">Support</p>*/}
+                {/*            <h4 className="text-white text-left leading-tight font-medium text-lg sm:text-2xl whitespace-break-spaces">Техническая поддержка</h4>*/}
+                {/*        </CardHeader>*/}
+                {/*        <Image*/}
+                {/*            alt="Card background"*/}
+                {/*            className="z-0 w-full h-full object-cover"*/}
+                {/*            src={supportImg}*/}
+                {/*        />*/}
+                {/*    </Card>*/}
+                {/*</Button>*/}
 
 
 

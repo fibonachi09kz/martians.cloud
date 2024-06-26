@@ -20,8 +20,8 @@ const HomePage = () => {
 			{/*</div>*/}
 			<Stats />
 			<Features />
-			<HPCta />
-			<Reviews />
+			<HPCta isLastBlock={true} />
+			{/*<Reviews />*/}
 		</Layout>
 	)
 }

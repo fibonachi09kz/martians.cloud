@@ -24,15 +24,15 @@ const socials = [
 	{
 		id: 1,
 		title: 'WhatsApp',
-		subtitle: '+7 (777) 300-35-60',
-		link: 'https://wa.me/77773003560',
+		subtitle: '+7 (777) 558-65-01',
+		link: 'https://wa.me/message/L5LAGUANI2CFD1',
 		image: wp
 	},
 	{
 		id: 2,
 		title: 'Telegram',
-		subtitle: '@MartiansStudio',
-		link: 'https://t.me/MartiansStudio',
+		subtitle: 'Martians Cloud',
+		link: 'https://t.me/martians_cloud',
 		image: tg
 	},
 ]
@@ -302,7 +302,7 @@ const FlexContactForm = ({service = 'Разработка сайтов', contact
 								) : null}
 							</div>
 
-							<p className="mt-1 text-gray-600 dark:text-gray-400 text-sm">Отправляя данную форму, вы подтверждаете, что согласны с <Link href="" className="text-primary">политикой конфиденциальности</Link></p>
+							<p className="mt-1 text-gray-600 dark:text-gray-400 text-sm">Отправляя данную форму, вы подтверждаете, что согласны с <Link href="/policy" target="_blank" className="text-primary">политикой конфиденциальности</Link></p>
 							<div className="flex-col sm:flex-row gap-5 flex items-center justify-between">
 								<Button
 									color="primary"

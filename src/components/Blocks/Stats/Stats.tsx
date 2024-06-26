@@ -9,11 +9,11 @@ const Stats = () => {
 					</div>
 					<div className="flex flex-col px-6 text-center">
 						<dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400 uppercase">Проектов</dt>
-						<dd className="order-1 text-6xl font-bold tracking-tight text-black dark:text-white">40+</dd>
+						<dd className="order-1 text-6xl font-bold tracking-tight text-black dark:text-white">20+</dd>
 					</div>
 					<div className="flex flex-col px-6 text-center">
-						<dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400 uppercase">Разработчиков</dt>
-						<dd className="order-1 text-6xl font-bold tracking-tight text-black dark:text-white">7</dd>
+						<dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500 dark:text-gray-400 uppercase">Экипаж</dt>
+						<dd className="order-1 text-6xl font-bold tracking-tight text-black dark:text-white">6</dd>
 					</div>
 				</dl>
 			</div>

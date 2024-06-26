@@ -22,16 +22,16 @@ export const services: ServiceInterface[] = [
 		mainColor: 'purple',
 		secondaryColor: ''
 	},
-	{
-		id: 3,
-		name: 'Интеграция нейросетей',
-		icon: () => <Icon className="w-10 h-10 md:w-14 md:h-14 mx-auto mb-6 md:mb-12 text-emerald-700" icon="fluent:brain-circuit-20-regular" />,
-		listIcon: (classes) => <Icon className={classes} icon="fluent:brain-circuit-20-regular" />,
-		description: 'Мы обеспечиваем гладкое внедрение и взаимодействие различных моделей и алгоритмов машинного обучения, чтобы ваша компания могла извлекать максимальную пользу из своих данных.',
-		detailLink: '/ai',
-		mainColor: 'emerald',
-		secondaryColor: ''
-	},
+	// {
+	// 	id: 3,
+	// 	name: 'Интеграция нейросетей',
+	// 	icon: () => <Icon className="w-10 h-10 md:w-14 md:h-14 mx-auto mb-6 md:mb-12 text-emerald-700" icon="fluent:brain-circuit-20-regular" />,
+	// 	listIcon: (classes) => <Icon className={classes} icon="fluent:brain-circuit-20-regular" />,
+	// 	description: 'Мы обеспечиваем гладкое внедрение и взаимодействие различных моделей и алгоритмов машинного обучения, чтобы ваша компания могла извлекать максимальную пользу из своих данных.',
+	// 	detailLink: '/ai',
+	// 	mainColor: 'emerald',
+	// 	secondaryColor: ''
+	// },
 	{
 		id: 4,
 		name: 'Контекстная реклама',
@@ -52,14 +52,14 @@ export const services: ServiceInterface[] = [
 		mainColor: 'orange',
 		secondaryColor: ''
 	},
-	{
-		id: 6,
-		name: 'Техническая поддержка',
-		icon: () => <Icon className="w-10 h-10 md:w-14 md:h-14 mx-auto mb-6 md:mb-12 text-sky-700" icon="ph:gear" />,
-		listIcon: (classes) => <Icon className={classes} icon="ph:gear" />,
-		description: 'Мы предлагаем широкий спектр услуг, включая мониторинг и обслуживание серверов, сетевую безопасность, управление облачными ресурсами, восстановление данных, а также консультации и обучение сотрудников. Наша цель - обеспечить вашему бизнесу стабильность и безопасность, чтобы вы могли сосредоточиться на своих стратегических целях, зная, что ваша техническая инфраструктура находится в надежных руках.',
-		detailLink: '/support',
-		mainColor: 'sky',
-		secondaryColor: ''
-	},
+	// {
+	// 	id: 6,
+	// 	name: 'Техническая поддержка',
+	// 	icon: () => <Icon className="w-10 h-10 md:w-14 md:h-14 mx-auto mb-6 md:mb-12 text-sky-700" icon="ph:gear" />,
+	// 	listIcon: (classes) => <Icon className={classes} icon="ph:gear" />,
+	// 	description: 'Мы предлагаем широкий спектр услуг, включая мониторинг и обслуживание серверов, сетевую безопасность, управление облачными ресурсами, восстановление данных, а также консультации и обучение сотрудников. Наша цель - обеспечить вашему бизнесу стабильность и безопасность, чтобы вы могли сосредоточиться на своих стратегических целях, зная, что ваша техническая инфраструктура находится в надежных руках.',
+	// 	detailLink: '/support',
+	// 	mainColor: 'sky',
+	// 	secondaryColor: ''
+	// },
 ]

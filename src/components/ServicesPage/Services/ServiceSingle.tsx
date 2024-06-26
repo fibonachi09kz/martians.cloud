@@ -38,7 +38,7 @@ const ServiceSingle = ({service}: Props) => {
 					<Icon className="text-xl" icon="icon-park-outline:more-app"/>
 				</Button>
 				<Button
-					href="/technologies"
+					href="/contacts"
 					as={Link}
 					color="default"
 					size="md"
