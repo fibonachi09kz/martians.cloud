@@ -116,8 +116,8 @@ const Projects = ({ initialProjects }: IProjectsProps) => {
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 							{projects.map(project => (
 								<Link key={project.id} href={`/projects/${project.slug}`} className="group flex flex-col transition-all overflow-hidden bg-gray-100 border border-2 border-white dark:border-black rounded-xl shadow-sm hover:shadow-xl active:shadow-sm dark:bg-zinc-900">
-									<div className="h-32 flex items-center justify-center px-4">
-										<Image src={project.acf['main-img'].url} className="h-1/3 w-auto filter dark:invert" width={216} height={44} alt="Logo" />
+									<div className="h-32 flex items-center justify-center px-4 py-5">
+										<Image src={project.acf['main-img'].url} className="h-full w-auto filter dark:invert" width={216} height={44} alt="Logo" />
 									</div>
 									<div className="flex-1 flex flex-col bg-white rounded-t-xl px-4 py-5 dark:bg-black">
 										<h2 className="sr-only">{project.title.rendered}</h2>

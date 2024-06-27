@@ -10,6 +10,8 @@ export interface Project {
 		url: string;
 		domain: string;
 		categories: [];
+        bigImgDesk: ImageInterface;
+        bigImgMobile: ImageInterface;
 	},
 	date: string;
 	date_gmt: string;
